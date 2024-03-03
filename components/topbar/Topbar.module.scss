@@ -1,0 +1,241 @@
+.Topbar {
+    background: #fff;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    padding: 14px 0;
+    .Wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .SearchBoxRightWrapper{
+        display: flex;
+    }
+
+    .Brand {
+        width: 220px;
+        cursor: pointer;
+        display: flex;
+        @media (max-width: 500px) {
+            display: none;
+        }
+        @media(max-width: 1399px ) {
+            min-width: 324px;
+        }
+        @media(max-width: 1199px) {
+            min-width: 268px;
+        }
+    }
+    .BrandMini {
+        display: none;
+        @media (max-width: 500px) {
+            display: inline-flex;
+        }
+        a {
+            width: 40px;
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .Start {
+        @media (max-width: 500px) {
+            min-width: 150px !important;
+        }
+        
+    }
+
+    .SearchBox {
+        min-width: 36%;
+    }
+    .End {
+        display: flex;
+        align-items: center;
+    }
+    .LoginBtn {
+        background-color: var(--theme-primary-color);
+        display: inline-flex;
+        align-items: center;
+        min-width: 163px;
+        min-height: 46px;
+        color: #fff;
+        margin-right: 1.25rem;
+        justify-content: center;
+        border-radius: 5px !important;
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        font-family: var(--theme-f-family-primary);
+        &:hover {
+            background-color: var(--theme-primary-color-hover);
+            color: var(--theme-primary-color);
+            border: 1px solid var(--theme-primary-color);
+        }
+    }
+    .MobileNavWrapper {
+        display: none;
+        @media (max-width: 991px) {
+            display: block;
+        }
+    }
+    .RightWrapper {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        @media (max-width: 991px) {
+            gap: 10px;
+            margin-left: 10px !important;
+            & > div {
+                text-align: center;
+            }
+        }
+    }
+    .SearchMobileToggler {
+        display: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        height: 48px;
+        width: 48px;
+        align-items: center;
+        justify-content: center;
+    }
+    .SearchMobileCloser {
+        visibility: hidden;
+    }
+    .SearchBoxContainer {
+        display: flex;
+        & > div {
+            flex: 1;
+        }
+    }
+    .SearchBoxContainerActive {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 99999;
+        background: #fff;
+        padding: 7px;
+        display: flex !important;
+        & > div {
+            flex: 1 0 100%;
+        }
+        .SearchMobileCloser {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            background-color: transparent;
+            border: none;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            visibility: visible;
+            border-radius: 50%;
+            z-index: 99;
+        }
+    }
+    @media (max-width: 991px) {
+        .Start {
+            min-width: 70%;
+        }
+        .RightWrapper {
+            margin-left: 20px;
+        }
+        .SearchBox {
+            min-width: auto;
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            .SearchBoxContainer {
+                display: none;
+            }
+        }
+        .SearchMobileToggler {
+            display: inline-flex;
+        }
+        .LoginBtn {
+            display: inline-flex;
+            align-items: center;
+            min-width: 100px;
+            min-height: 40px;
+            color: #fff;
+            font-size: 12px;
+            // margin-left: 1.25rem;
+            margin-right: 0;
+            justify-content: center;
+        }
+    }
+}
+
+.TopbarLoader {
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    .LoadingLogo {
+        :global {
+            .ant-skeleton-title {
+                display: none;
+            }
+            .ant-skeleton-paragraph {
+                margin: 0;
+                li {
+                    height: 50px;
+                    width: 120px !important;
+                }
+            }
+        }
+    }
+    .LoadingSearch {
+        :global {
+            .ant-skeleton-title {
+                display: none;
+            }
+            .ant-skeleton-paragraph {
+                margin: 0;
+                li {
+                    height: 50px;
+                    width: 398px !important;
+                    @media (max-width: 991px) {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+    .LoadingSignup {
+        width: 150px;
+        height: 40px;
+        :global {
+            .ant-skeleton-title {
+                display: none;
+            }
+            .ant-skeleton-paragraph {
+                margin: 0;
+                li {
+                    height: 50px;
+                    width: 150px !important;
+                }
+            }
+        }
+    }
+    .LoadingProfile {
+        width: 40px;
+        height: 40px;
+    }
+    .LoadingRight {
+        display: flex;
+        gap: 26px;
+        align-items: center;
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}
+
+.TopbarFixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+}

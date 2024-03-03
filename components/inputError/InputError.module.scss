@@ -1,0 +1,23 @@
+.InputError {
+    min-height: 29p;
+    border-radius: 4px;
+    background-color: rgba(#ff0000, 0.1);
+    padding: 5px 15px;
+    position: relative;
+    margin:10px 0;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:2px;
+        height: 100%;
+        background-color: #ff0000;
+    }
+    h6 {
+        font-size: 13px;
+        font-weight: 400;
+        font-family: var(--theme-f-family-secondary);
+        color:#fe3838;
+    }
+}

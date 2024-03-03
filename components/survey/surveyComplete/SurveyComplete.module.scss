@@ -1,0 +1,34 @@
+.container {
+  display:  flex;
+  margin: 50px 0;
+}
+
+.title {
+  margin: 15px 0;
+  font-family: var(--theme-f-family-primary);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.subtitle {
+  color: #C2C2C2;
+  font-size: 1.125rem;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.left {
+  max-width: 62%;
+}
+
+.right {
+  padding-left: 20px;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  margin-left: -7px;
+}

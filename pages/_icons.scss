@@ -1,0 +1,18 @@
+.angle-down-solid {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    &::before{
+        content:url('./../public/icons/angle-down-solid.svg');
+    }
+}       
+
+
+.calendar-alt-solid{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    &::before{
+        content:url('./../public/icons/calendar-alt-solid.svg');
+    }
+}       

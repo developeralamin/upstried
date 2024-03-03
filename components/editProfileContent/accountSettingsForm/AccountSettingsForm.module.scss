@@ -1,0 +1,158 @@
+.deactivate-container {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  color: black;
+  font-size: 1rem;
+  min-width: 200px;
+}
+
+.subtitle {
+  color: #8C8C8C;
+  font-size: 0.95rem;
+  flex-grow: 1;
+  font-weight: normal;
+}
+
+.deactivate {
+  border-radius: 5px;
+  color: white !important;
+  background-color: #A7A7A7;
+  border-color: #A7A7A7;
+  font-weight: 600;
+  padding: 10px 20px;
+  height: auto !important;
+  width: auto;
+
+  &:hover, &:focus {
+    background-color: #FC3273;
+    border-color: #FC3273;
+  }
+}
+
+.alert {
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.reset {
+  all: unset;
+}
+
+.modal {
+  min-width: 300px;
+
+  :global(label) {
+    margin-top: 20px;
+    color: #777777;
+  }
+
+  :global(.ant-input-affix-wrapper) {
+    border-radius: 5px;
+  }
+
+  :global(.ant-modal-confirm-content) {
+    padding: 0 40px 30px 0;
+  }
+
+  :global(.ant-alert-warning) {
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  :global(.ant-alert-message) {
+    color: #4e4e4e;
+  }
+  
+}
+
+.warning {
+  color: #faad14;
+  background: white;
+  margin-right: 10px;
+}
+
+.btn-container {
+
+  :global(.ant-form-item-control-input-content){
+    display: flex;
+    justify-content: center;
+    margin: 5px 0 35px;
+  }
+
+  button {
+    padding: 10px 20px;
+    height: auto;
+    border-radius: 5px;
+    color: white;
+    border-color: #3161F1;
+    background-color: #3161F1;
+
+    &:hover, &:focus {
+      background-color: rgba(63, 106, 236, 0.8);
+      border-color: rgba(63, 106, 236, 0.8);
+      color: white;
+    }
+  }
+}
+
+.form-container {
+  max-width: 650px;
+}
+
+.container {
+  :global(.ant-modal-header) {
+    border-radius: 10px 10px 0 0 !important;
+  }
+
+  :global(.ant-modal-body){
+    background: #f9f9f9;
+    padding: 0 24px 15px;
+  }
+
+  :global(.ant-modal-footer) {
+    border-radius: 0 0 10px 10px !important;
+    border-top: unset;
+    background: #f9f9f9;
+    text-align: center;
+    padding-bottom: 45px;
+  }
+
+  :global(.ant-form-item-extra){
+    color: black;
+    font-size: normal;
+  }
+
+  :global(label){
+    color: black;
+
+    &::before{
+      display: none !important;
+    }
+  }
+
+  :global(.ant-input-affix-wrapper){
+   padding: 10px;
+  }
+
+  :global(.ant-form-item-explain.ant-form-item-explain-error){
+    color: #FC3273;
+  }
+}
+
+.cancel {
+  display: none;
+}
+
+.ok {
+  background: #FC3273;
+  border-color: #FC3273;
+  color: white !important;
+
+  &:hover, &:focus {
+    background: rgba(252, 50, 114, 0.8);
+    border-color: rgba(252, 50, 114, 0.8);
+  }
+}

@@ -1,0 +1,79 @@
+.TipsLinkAndAttachUploader {
+    .Actions {
+        display: flex;
+        gap: 15px;
+        .Actions__item {
+            background: none;
+            padding: 0;
+            border: none;
+            box-shadow: none;
+            width: 20px;
+            height: 10px;
+            img {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.TipsLinkModal {
+    .Title {
+        font-size: 19px;
+        line-height: 23px;
+        margin-bottom: 30px;
+        color: #282a32;
+    }
+    .LinkContent {
+        background: #fff;
+        padding: 24px;
+        border-radius: 10px;
+    }
+    .Links {
+        .Link {
+            min-height: 43px;
+            border: 0.5px solid var(--border-color);
+            box-sizing: border-box;
+            border-radius: 3px;
+            width: 100%;
+            margin-bottom: 17px;
+            padding: 12px 21px;
+        }
+        .LinkWrapper {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+    .LinkClose {
+        border: none;
+        padding: 0;
+        margin-bottom: 17px;
+    }
+    .TipsLinkModalInput {
+        min-height: 43px;
+        border: 0.5px solid var(--border-color);
+        box-sizing: border-box;
+        border-radius: 3px;
+        width: 100%;
+        margin-bottom: 17px;
+        padding: 12px 21px;
+        &::placeholder {
+            font-size: 14px;
+            color: #d0d0d0;
+        }
+    }
+    .LinkAdd {
+        font-size: 14px;
+        background-color: none;
+        border: none;
+        padding: 0;
+    }
+    .TipsLinkModalFooter {
+        display: flex;
+        justify-content: flex-end;
+        .BtnCancel {
+            border: none;
+            box-shadow: none;
+        }
+    }
+}

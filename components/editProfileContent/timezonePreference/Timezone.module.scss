@@ -1,0 +1,28 @@
+.Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+
+  .Preference {
+    font-family: var(--theme-f-family-secondary);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin: 0 0 9px 0;
+  }
+  .Description {
+    font-family: var(--theme-f-family-secondary);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #93929e;
+  }
+  :global {
+    .ant-select-selector {
+      min-height: 42px;
+    }
+  }
+}

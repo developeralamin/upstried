@@ -1,0 +1,42 @@
+.TipsMeta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.Divider {
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-gray-light);
+    display: inline-block;
+    border-radius: 10px;
+    margin: 0 8px;
+}
+.MetaItem {
+    display: flex;
+    align-items: center;
+    color: var(--color-gray);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    font-family: var(--theme-f-family-primary);
+    span {
+        cursor: pointer;
+        color: var(--color-gray);
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.DividerBar {
+    margin: 0 5px;
+}
+
+.PrivacyIcon {
+    display: flex;
+    align-items: center;
+    img {
+        transform: translateY(-1px);
+    }
+}

@@ -1,0 +1,10 @@
+.Tasks {
+  margin-top:20px;
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+  .Title{
+    font-size:14px;
+    font-weight: 700;
+  }
+}

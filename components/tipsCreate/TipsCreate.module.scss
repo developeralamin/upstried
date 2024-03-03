@@ -1,0 +1,37 @@
+.TipsCreate {
+    .Toggler {
+        display: inline-flex;
+        align-items: center;
+        color: #fff;
+        border-radius: 5px;
+        padding: 0 18px;
+        min-height: 42px;
+        &:focus{
+            background: darken(#3060f0, 20);
+        }
+        &:hover{
+            background: darken(#3060f0, 20);
+        }
+    }
+
+    .CreateTipsIcon {
+        margin-right: 0.8125rem !important;
+    }
+
+    .CreateTipsLabel {
+        margin-left: 10px !important;
+    }
+
+    @media (max-width: 991px) {
+        .Toggler {
+            padding: 0 5px;
+            min-height: 10px;
+        }
+        .CreateTipsIcon{
+            margin-right: 0 !important;
+        }
+        .CreateTipsLabel {
+            display: none;
+        }    
+    }
+}

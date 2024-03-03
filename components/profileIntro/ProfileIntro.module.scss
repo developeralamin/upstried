@@ -1,0 +1,67 @@
+.ProfileIntro {
+    display: flex;
+    grid-gap: 10px;
+    padding: 1.875rem;
+    padding-bottom: 0;
+    .TopLeft {
+        flex: 1;
+    }
+
+    .TopRight {
+        flex: 1 auto 33%;
+    }
+
+    .ProfilePhoto {
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .Name {
+        font-size: 16px;
+        font-weight: 700;
+        @media (max-width: 576px) {
+            font-size: 13px;
+        }
+    }
+
+    .Email {
+        font-size: 14px;
+        color: var(--color-gray);
+        margin: 0;
+        margin-bottom: 5px;
+        font-weight: 400;
+        @media (max-width: 576px) {
+            font-size: 13px;
+        }
+    }
+
+    .EditProfile {
+        font-family: var(--theme-f-family-primary);
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.875rem;
+        font-weight: 600;
+        padding: 10px 10px;
+        border-radius: 3px;
+        background-color: var(--theme-primary-color); 
+        min-width: 120px;
+        height: 35px;
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        color: #ffffff;
+        &:hover {
+            background-color: #7699FF;
+            color: #fff;
+        }
+        @media (max-width: 576px) {
+            font-size: 13px;
+        }
+    }
+}

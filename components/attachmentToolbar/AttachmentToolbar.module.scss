@@ -1,0 +1,138 @@
+.AttachmentToolbar {
+    display: flex;
+    gap: 30px;
+    .Button {
+        padding: 0;
+        height: auto;
+        color: #222;
+        width: 14px;
+        height: 14px;
+        display: flex;
+        gap: 5px;
+        border: none;
+        font-weight: 500;
+        align-items: center;
+        font-family: var(--theme-f-family-secondary);
+        span {
+            color: #bab9c6;
+            flex: 1;
+        }
+    }
+    img,
+    svg {
+        opacity: 0.4;
+        width: 14px;
+        height: 14px;
+    }
+    .LinksContainer {
+        position: absolute;
+        bottom: 40px;
+    }
+}
+
+.AttachmentItemToolbar {
+    .AttachmentsList {
+        width: 268px;
+        border-radius: 5px;
+        filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+        background-color: #fff;
+        border: 1px solid #ededed;
+        padding: 14px;
+        position: relative;
+        .Title {
+            font-size: 13px;
+            color: #151617;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+        .Close {
+            border: none;
+            padding: 0;
+        }
+        .AttachmentsListItem {
+            .Link {
+                font-size: 14px;
+                color: #4a77fd;
+            }
+        }
+        .Close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    }
+    .Gallery {
+        background-color: #fff;
+        width: 400px;
+        border: 1px solid var(--border-color);
+        padding: 20px;
+        z-index: 9999;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        .Attachment {
+            width: 140px;
+            padding: 3px;
+            max-width: 80px;
+            position: relative;
+            z-index: 999999;
+            img {
+                width: 100%;
+                height: auto;
+                border: 2px solid #ddd;
+            }
+            .Close {
+                position: absolute;
+                right: -5px;
+                top: -5px;
+                padding: 0;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background-color: #ff0000;
+                border: none;
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+
+        .Pdf {
+            border: 1px solid var(--border-color);
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            color: brown;
+            flex-direction: column;
+            align-items: center;
+            h5 {
+                font-size: 12px;
+            }
+        }
+
+        .Audio {
+            border: 1px solid var(--border-color);
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            color: skyblue;
+            flex-direction: column;
+            align-items: center;
+            h5 {
+                font-size: 12px;
+                color: #000;
+                word-break: break-word;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.ImageBox {
+    width: 130px;
+    height: 100px;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

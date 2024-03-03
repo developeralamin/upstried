@@ -1,0 +1,33 @@
+.TipComments {
+    background-color: #f9f9f9;
+    padding: 40px;
+    padding-top: 0;
+    padding-right: 0;
+    // overflow-y: auto;
+    height: 100%;
+    width:100%;
+    box-shadow: inset 7px 0 9px -7px rgba(0, 0, 0, 0.4);
+    @media (max-width: 1100px) {
+        box-shadow: 7px 0 9px -7px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (max-width: 1130px) {
+        width: 100%;
+    }
+
+    .SigninCommnetBtn {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .Toggler {
+        width: 30px;
+        height: 30px !important;
+        border-radius: 40px;
+        padding: 0;
+        font-size: 12px;
+        position: absolute;
+        right: 41px;
+        top: 60px;
+        display: none;
+    }
+}

@@ -1,0 +1,278 @@
+.container{
+    margin-top: 84px;
+}
+.PackageHeadContent{
+    width: 100%;
+    background-color: #2D5D83;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 41px;
+    color: white;
+    padding-bottom: 41px;
+}
+.PackageContent p{
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.PackageContent p img{
+    width: 21px;
+    height: 20px;
+    margin-left: 8px;
+    margin-right: 6px;
+}
+
+
+//packages
+
+.columns {
+    float: left;
+    width: 36.3%;
+    padding: 8px;
+    margin: 8px;
+  }
+  .Plan{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0428ff;
+    align-items: center;
+}
+.Plan a{
+    color: white;
+    margin-right: 15px;
+    text-decoration: underline;
+}
+
+.BestDeal{
+    background-color: #C6D4FF;
+    border-radius: 6px;
+    justify-content: center;
+    width: 101px;
+    height: 25px;
+    margin-right: 22px;
+}
+
+.BestDeal img{
+    width: 18px;
+    height: 18px;
+    margin-left: 7px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    transition: 0.3s;
+    border-radius: 9px;
+    padding-left: 0;
+    padding-bottom: 31px;
+  }
+  
+  .price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+    background-color: #0428ff;
+    color: white;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 39px;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+}
+
+  .Dollar {
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 37px;
+    margin-bottom: 17px;
+    margin-top: 7px;
+  }
+  .PriceData{
+    padding-bottom: 20px;
+    margin-left: 33px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 3px;
+    gap: 5px;
+  }
+
+  .Icon img {
+    margin-right: 9px;
+  }
+
+  .button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  button.BuyNowButton{
+    width: 82%;
+    margin: 0 auto;
+    height: 43px;
+    background-color: #015E8C;;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 11px;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    align-items: center;
+  }
+
+  //payment card option
+  //payment card option
+
+  .MaxContainer{
+    margin-top: 84px;
+    background: #f7F9FF;
+  }
+  
+  .PackageContainer{
+      max-width: 1320px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      padding-top: 39px;
+  }
+  
+  .PaymentCardOptions {
+    background: white;
+    /* width: 100%; */
+    padding: 35px;
+    border: 1px solid #3161F1;
+    border-radius: 8px;
+}
+
+
+.PaymentOption{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid #C3C3C3;
+  border-radius: 5px;
+  height: 55px;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.PaymentOption p{
+  margin-bottom: 1px;
+}
+
+  //order righside conente
+  .OrderHead{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+
+  .Premium{
+      background-color: #3161F1;
+      color: white;
+      border-radius: 8px;
+      padding-top: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 6px;
+  }
+  .premiumData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .premiumData span.amount{
+    font-weight: bold;
+  }
+.Premium p{
+  font-weight: 300;
+  margin-top: 11px;
+}
+// .Premium p::before{
+//   content: "";
+//   position: absolute;
+//   left: 53.5%;
+//   bottom: 21.5%;
+//   height: 1px;
+//   width: 9%;
+//   border-bottom: 1px solid #ffffff;
+// }
+
+.Total{
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0 20px 0px;
+}
+.Total h4{
+  font-size: 20px;
+}
+.TrialMsg{
+  text-align: right;
+}
+.TrialMsg h4{
+  font-size: 20px;
+}
+.TrialMsg p{
+  font-weight: thin;
+}
+.OrderSection{
+  background-color: #ffffff;
+  padding: 30px;
+  border: 1px solid #e6e0e0;
+  border-radius: 12px;
+}
+.OrderDetails{
+    background-image: url(../../public/books/Union.png);
+    text-align: center;
+    border-radius: 21px;
+    padding: 33px 7px 18px 7px;
+  }
+
+  .OrderDetails span{
+    color: #3967F2;
+  }
+
+  .OrderDetails p{
+    font-weight: 300;
+    margin-top: 10px;
+  }
+
+.PayNow{
+  width: 82%;
+  margin: 0 auto;
+  height: 43px;
+  background-color: #015E8C;;
+  outline: none;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 11px;
+  font-size: 17px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  align-items: center;
+}
+.PaymentFooter{
+  margin-top: 100px;
+}
+  @media only screen and (max-width: 600px) {
+    .columns {
+      width: 100%;
+    }
+  }

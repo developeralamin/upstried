@@ -1,0 +1,103 @@
+.ProfileDetails {
+  :global {
+    .ant-tabs {
+      min-height: 700px;
+    }
+    .ant-tabs-nav {
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.07);
+      display: inline-block;
+    }
+    .ant-tabs > .ant-tabs-nav .ant-tabs-nav-list,
+    .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-list {
+      flex-wrap: wrap;
+
+      @media (max-width: 738px) {
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
+      }
+    }
+
+    .ant-tabs-nav-wrap {
+      width: 100%;
+      margin: auto;
+      padding: 0 20px;
+
+      @media (min-width: 992px) {
+        width: 940px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 1140px;
+      }
+
+      @media (min-width: 1400px) {
+        width: 1320px;
+      }
+    }
+
+    .ant-tabs-tab {
+      padding: 0;
+      @media (max-width: 700px) {
+        margin: 0;
+      }
+    }
+    .ant-tabs-ink-bar {
+      display: none;
+    }
+    .ant-tabs-tab-btn {
+      border-bottom: 2px solid transparent;
+    }
+    .ant-tabs-tab-btn:hover {
+      color: #000;
+      text-shadow: 0 0 0.25px #000;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #000;
+      text-shadow: 0 0 0.25px #000;
+      border-bottom: 2px solid #000;
+    }
+    .ant-tabs-ink-bar {
+      background: #000;
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+    .ant-tabs-tab-btn {
+      font-style: 14px;
+      font-family: var(--theme-f-family-primary);
+      font-weight: 500;
+      color: var(--color-gray);
+      padding: 25px 15px;
+    }
+
+    .ant-tabs-content-holder {
+      width: 100%;
+      margin: auto;
+      padding: 0 20px;
+
+      @media (min-width: 992px) {
+        width: 940px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 1140px;
+      }
+
+      @media (min-width: 1400px) {
+        width: 1320px;
+      }
+    }
+    .ant-tabs-content {
+      padding: 40px 0;
+    }
+  }
+
+  .Tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-column-gap: 1.875rem;
+    grid-row-gap: 1.5625rem;
+  }
+}

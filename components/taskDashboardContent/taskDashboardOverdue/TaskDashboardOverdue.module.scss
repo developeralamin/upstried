@@ -1,0 +1,25 @@
+.TodoTitle{
+    font-family: var(--theme-f-family-primary);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--body-f-color);
+    margin-bottom: 16px;
+    margin-top: 54px;
+}
+
+.HzLine {
+    opacity: 0.1;
+    border: 1px solid #000000;
+}
+.CompletedTitle {
+    margin-top: 30px;
+    font-family: var(--theme-f-family-primary);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--body-f-color);
+    margin-bottom: 16px;
+}

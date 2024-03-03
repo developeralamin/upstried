@@ -1,0 +1,101 @@
+.TipsCommentForm {
+    .Feedback {
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
+        background-color: rgb(255, 255, 255);
+        min-height:50px;
+        width: 100%;
+        &::placeholder{
+            font-size: 14px;
+            color: rgba( #222, .5);
+        }
+        &:focus{
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    .IsCommentExists {
+        display: none;
+    }
+    .Creatable {
+        background: rebeccapurple;
+        :global {
+            .ant-btn {
+                padding: 9px 52px;
+            }
+        }
+        
+    }
+    .Submit{
+        width: 60px;
+        height:28px;
+        padding: 0 !important;
+        display: flex;
+        justify-content: center;
+        background: var(--theme-primary-color);
+        border-radius: 3px;
+        box-shadow: none;
+        align-items: center;
+    }
+    :global {
+        .ant-input{
+            min-height:50px;
+        }
+        .ant-form-item{
+            margin-bottom: 7px;
+        }
+        .ant-form {
+            width: 100%;
+        }
+        .ant-form-item-control-input{
+            text-align: right;
+        }
+        .ant-form-item-control-input-content{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .Editable {
+        margin-top: 20px;
+        :global {
+            .ant-btn {
+                padding: 6px 15px !important;
+                font-size: 13px;
+            }
+        }
+    }
+    .cancelBtn {
+        padding: 6px 15px;
+        font-size: 13px;
+        margin-left: 5px;
+        background: #fff;
+        border: 1px solid var(--border-color);
+    }
+}
+
+.CreatableForm{
+    .Submit{
+        width: 90px;
+        height:32px;
+        padding: 0 !important;
+        display: flex;
+        justify-content: center;
+        background: var(--theme-primary-color);
+        border-radius: 3px;
+        box-shadow: none;
+        align-items: center;
+        float: right;
+        &:hover{
+            background: #fff;
+            border: 1px solid var(--theme-primary-color);
+            color: var(--theme-primary-color);
+        }
+    }
+    :global {
+        .ant-input{
+            min-height:50px;
+            border-radius: 3px;
+        }
+    }
+}

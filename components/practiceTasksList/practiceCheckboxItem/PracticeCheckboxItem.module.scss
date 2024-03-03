@@ -1,0 +1,123 @@
+.PracticeCheckbox {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(#000000, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  &:first-child{
+    padding-top: 0px;
+  }
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+  :global {
+    .ant-checkbox-wrapper {
+      span {
+        padding: 0;
+        font-weight: 500;
+        font-size: 14px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+.Hovered {
+  padding-left: 80px;
+  .StatusIcon{
+    display: none;
+  }
+}
+.PracticeActions {
+  display: flex;
+  gap: 6px;
+  position: absolute;
+  transform: scale(0);
+  left:0;
+  transition: transform 1s ease-in-out;
+}
+.PracticeActions_isHovered {
+  transform: scale(1);
+  transition: transform 1s ease-in;
+}
+.Done {
+  border: none;
+  background: none;
+  width: 20px;
+  height: 20px;
+  background: #4a77fd;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Fail {
+  border: none;
+  border-radius: 20px;
+  background: none;
+  width: 20px;
+  height: 20px;
+  background: #fc3262;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Skip {
+  border: none;
+  border-radius: 20px;
+  background: none;
+  width: 20px;
+  height: 20px;
+  background: #f1b920;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.PracticeDone{
+
+}
+
+.PracticeFailed{
+font-weight: 500;
+font-size: 14px;
+color: #FC3262;
+}
+
+.PracticeSkipped{
+  font-weight: 500;
+  font-size: 14px;
+  color: #F1B920;
+}
+
+.PracticeDone{
+  font-weight: 500;
+  font-size: 14px;
+  color: #3161F1;
+}
+
+.StatusIcon{
+  margin-right: 12px;
+}
+.Disable{
+  width: 20px;
+  height: 20px;
+  background: #D6D6D6;
+}
+.PracticeDue{
+  color: #FF3743;
+}
+
+.practiceUpcoming{
+  opacity: .5;
+}
+.Disabled{
+  opacity: .5;
+}

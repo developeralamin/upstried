@@ -1,0 +1,50 @@
+.MenuButton {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    font-family: var(--theme-f-family-tertiary);
+    font-style: normal;
+    width: 176px;
+    padding: 6px 0px 6px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17.07px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    &:hover {
+        color: #88A6FF;
+    }
+}
+
+.OnHover {
+    color: #88A6FF !important;
+}
+
+.Active {
+    color: #3161F1;
+}
+.IconInactive {
+    color : #DBDDE0;
+   
+}
+
+.Overdue {
+    padding-left: 0px;
+}
+
+.Title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    .TitleText {
+      font-family: var(--theme-f-family-primary);
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color:#222222;
+    }
+
+}

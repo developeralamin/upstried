@@ -1,0 +1,35 @@
+.TaskLists {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.TaskListItem {
+    min-height: 60px;
+    background-color: #fbfcfc;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    padding: 13px 20px;
+    .Top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        p {
+            margin: 0;
+        }
+    }
+    .Title {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        flex: 1;
+        white-space: pre-line;
+        word-break: break-word;
+    }
+    .Repeat {
+        font-size: 12px;
+        cursor: pointer;
+    }
+}

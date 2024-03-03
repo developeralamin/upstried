@@ -1,0 +1,110 @@
+.ProfileNav {
+    position: relative;
+    display: flex;
+    .ProfileNavbar {
+        margin-top: 12px;
+        position: absolute;
+        top: 140%;
+        right: -7px;
+        width: 315px;
+        z-index: 11;
+        background-color: #fff;
+        border: 1px solid var(--border-color);
+        border-radius: 7px;
+        @media (max-width: 390px){
+            width: auto;
+        }
+
+        .UpArrow {
+            top: -8px;
+            position: absolute;
+            right: 14px;
+        }
+        
+    }
+
+    .Toggler {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        :global {
+            .ant-avatar{
+                background: #ddd;
+            }
+        }
+        figure{
+            margin:0;
+            width:40px;
+            height:40px;
+            display: flex;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+    }
+
+    .Divider {
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 1.25rem;
+        
+        margin-top: 10px;
+    }
+
+    .Top {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 15px;
+    }
+
+
+    .TopLeft {
+        flex: 1;
+    }
+
+    .TopRight {
+        flex: 1 auto 33%;
+
+
+    }
+    .Bottom{
+        
+           
+    }
+
+    .Logout {
+        cursor: pointer;
+        background-color: transparent;
+        width: calc(100% - 14px) ;
+        padding: 8px;
+        border-radius: 5px;
+        font-family: var(--theme-f-family-primary);
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        text-align: left;
+        padding: 15px;
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        margin: 6px;
+        color: #959595;
+        
+
+        svg {
+            margin-right: 20px;
+        }
+        &:hover {
+            color: #FE5555;
+            background-color: #F5F5F5;
+            svg path { 
+                fill:  #FE5555;
+                ;
+            }
+          } 
+
+        
+
+        
+        
+    }
+}

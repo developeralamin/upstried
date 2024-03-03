@@ -1,0 +1,17 @@
+.title {
+  padding: 20px 0;
+  color: gray;
+}
+
+.noOverdueTaskFound{
+  text-align: center;
+  padding: 70px 0;
+  p{
+    font-family: var(--theme-f-family-primary);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;    
+    color: #000000;
+  }
+}

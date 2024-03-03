@@ -1,0 +1,96 @@
+.container {
+  :global(.ant-form-item-label) {
+    text-transform: uppercase;
+    
+    label {
+      padding-top: 5px;
+      font-size: 1rem;
+      min-width: 100px;
+      align-items: center;
+      font-weight: 700;
+      min-height: 40px;
+      text-transform: capitalize;
+
+      @media(max-width: 990px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    label:after {
+      display: none !important;
+    }
+
+    label:before {
+      display: none !important;
+    }
+  }
+
+  :global(input){
+    width: 100%;
+    border-radius: 6px;
+    min-height: 40px;
+    padding: 10px;
+    color: black;
+    font-weight: 400;
+    border: 1px solid #E5E5E5;
+
+    &:focus {
+      color: black;
+    }
+  }
+
+  :global(.ant-picker){
+    border-radius: 6px;
+    border: 1px solid #E5E5E5;
+    padding: 5px 20px;
+
+    :global(input){
+      border: unset;
+      padding: 0 5px;
+      min-height: 30px;
+      
+    }
+  }
+
+  :global(.ant-checkbox-checked .ant-checkbox-inner){
+    background-color: var(--theme-primary-color);
+    border-color: var(--theme-primary-color);
+  }
+
+  :global(.ant-modal-header){
+    border-radius: 7px 7px 0 0;
+    border: unset;
+  }
+
+  :global(.ant-modal-footer){
+    border-radius: 7px 7px 0 0;
+    border: unset;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  :global(.ant-modal-body){
+    padding-bottom: 5px;
+  }
+
+}
+
+.cancel {
+  display: none;
+}
+
+.ok {
+  min-width: 120px;
+  min-height: 35px;
+}
+
+.extra {
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.checkbox {
+  :global(.ant-checkbox){
+    margin-right: 5px;
+  }
+}

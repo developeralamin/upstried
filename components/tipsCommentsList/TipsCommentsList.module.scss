@@ -1,0 +1,48 @@
+.TipsCommentsList {
+  height: 100vh;
+  overflow: auto;
+  padding: 50px 0;
+  padding-right: 30px;
+  &::-webkit-scrollbar {
+    width: 0px;
+}
+scrollbar-color: transparent transparent;
+  .CommentsCount{
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .CommentsTagline{
+    font-size: 15px;
+    color: #9d9d9d;
+    font-weight: 400;
+  }
+  .Signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .Tagline{
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      padding: 35px 0;
+    }
+  }
+  :global {
+    .demo-loading-container {
+      position: absolute;
+      bottom: 40px;
+      width: 100%;
+      text-align: center;
+    }
+    .ant-list-item {
+      flex-direction: column;
+      justify-content: flex-start !important;
+      align-items: flex-start;
+    }
+    .Reply {
+      margin-left: 20px;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,437 @@
+.Filter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    @media (max-width: 411px) {
+      flex-wrap: nowrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    & > div {
+      flex: 1 0 30%;
+      @media (max-width: 1399px) {
+        flex: 1;
+      }
+    }
+  }
+
+  .ContentTypeSelector {
+    :global {
+      .ant-select-selector {
+        height: 33px !important;
+        border-radius: 7px;
+        border: 1px solid #e7e6e9;
+      }
+      .ant-select-arrow {
+        svg {
+          width: 2px;
+          display: flex;
+        }
+      }
+
+      @media (max-width: 411px) {
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+
+    @media (max-width: 411px) {
+      width: auto !important;
+      flex: 1;
+    }
+  }
+  .Start {
+    display: inline-flex;
+    flex-wrap: wrap;
+    button {
+      background-color: transparent;
+      border: none;
+      font-size: 1rem;
+      color: #151617;
+      font-weight: 600;
+      font-family: var(--theme-f-family-primary);
+      margin-right: 50px;
+      cursor: pointer;
+      &:hover {
+        color: var(--theme-primary-color);
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+
+      span {
+        margin-right: 0.8125rem;
+      }
+    }
+  }
+  .Middle {
+    display: flex;
+    justify-content: center;
+    flex: 1 0 40% !important;
+
+    @media (max-width: 411px) {
+      margin-top: 0 !important;
+      display: none;
+    }
+    .Menu {
+      padding: 0;
+      display: flex;
+      list-style: none;
+      margin: 0;
+      align-items: center;
+      li {
+        font-size: 14px;
+        font-weight: 500;
+        color: #151617;
+        font-family: var(--theme-f-family-primary);
+        cursor: pointer;
+        border: 1px solid transparent;
+        &.Active {
+          button {
+            border: 1px solid #e7e6e9;
+            background: #eceff3;
+          }
+        }
+        button {
+          border-radius: 7px;
+          padding: 5px 20px;
+          border: 1px solid transparent;
+          background: transparent;
+          cursor: pointer;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .MobileMenuItems {
+    @media (min-width: 412px) {
+      margin-top: 0 !important;
+      display: none;
+    }
+    margin-bottom: 10px;
+    overflow: auto;
+    .Menu {
+      padding: 0;
+      display: flex;
+      list-style: none;
+      margin: 0;
+      align-items: center;
+      li {
+        font-size: 13px;
+        font-weight: 500;
+        color: #151617;
+        font-family: var(--theme-f-family-primary);
+        cursor: pointer;
+        border: 1px solid transparent;
+        &.Active {
+          button {
+            border: 1px solid #e7e6e9;
+            background: #eceff3;
+          }
+        }
+        button {
+          border-radius: 7px;
+          padding: 5px 10px;
+          border: 1px solid transparent;
+          background: transparent;
+          cursor: pointer;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .End {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.625rem;
+    @media (max-width: 411px) {
+      margin-bottom: 10px;
+      display: none !important;
+    }
+    .FilterBtn {
+      height: 33px;
+      display: flex;
+      padding: 0 0.9375rem;
+      font-size: 13px;
+      span {
+        margin-left: 0.6875rem;
+        margin-right: 0;
+      }
+      &:hover {
+        border: 1px solid #40a9ff;
+        transition: all 0.3s;
+      }
+    }
+    button {
+      position: relative;
+      cursor: pointer;
+      background-color: #fff;
+      border: 1px solid #e7e6e9;
+      border-radius: 7px;
+      min-width: 5.5625rem;
+      height: 33px;
+      margin-bottom: 0;
+      font-size: 13px;
+      color: #151617;
+      font-weight: 600;
+      font-family: var(--theme-f-family-primary);
+      display: inline-flex;
+      align-items: center;
+
+      span {
+        margin-right: 0.625rem;
+        @media (max-width: 411px) {
+          margin-right: 1.625rem;
+        }
+      }
+      @media (max-width: 411px) {
+        min-width: 120px;
+      }
+    }
+
+    @media (max-width: 411px) {
+      display: flex;
+      gap: 10px;
+      button {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  :global .ant-select {
+    width: 10.5625rem;
+
+    &:not(.ant-select-customize-input) .ant-select-selector {
+    }
+
+    .ant-select-arrow {
+      .ant-select-suffix::after {
+        content: url('./../../public/filter/angle-down-solid.svg');
+        width: 9px;
+        height: 7px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-120%);
+        right: 0.125rem;
+        opacity: 0.7;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+  }
+}
+
+.Filters {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 0.75rem;
+  margin-bottom: 40px;
+
+  .FiltersContainer {
+    display: flex;
+    flex: 1 0 90%;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .FilterResetItem {
+    display: flex;
+    align-items: center;
+  }
+  .FilterItem {
+    flex: 1 0 22%;
+    min-width: 22%;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+      width: 100% !important;
+    }
+    @media (max-width: 771px) {
+      flex: 1 0 44%;
+      min-width: 44%;
+    }
+  }
+  .FilterReset {
+    border: 1px solid rgb(231, 230, 233);
+    border-radius: 7px;
+    background-color: rgb(241, 241, 242);
+    height: 35px;
+  }
+  :global {
+    .ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+      border-color: darken(#e7e6e9, 20);
+      border-right-width: 1px !important;
+    }
+  }
+
+  :global .ant-select {
+    .ant-select-selector {
+      border: 1px solid rgb(231, 230, 233);
+      border-radius: 7px;
+      background-color: rgb(241, 241, 242);
+      height: 36px;
+      color: #151617;
+    }
+    .ant-select-selection-placeholder {
+      line-height: 36px;
+    }
+  }
+
+  :global .ant-select-focused {
+    .ant-select-selector {
+      background-color: #fff;
+    }
+    .ant-select-selection-placeholder {
+      display: none;
+    }
+  }
+}
+.MobileCategoryBtn {
+  @media (min-width: 412px) {
+    display: none;
+  }
+  button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px !important;
+    background-color: white !important;
+    font-size: 13px;
+    color: #151617 !important;
+    font-weight: 600;
+  }
+}
+
+.MobileFilterBtn {
+  @media (min-width: 412px) {
+    display: none;
+  }
+  button {
+    font-size: 13px;
+    color: #151617;
+    font-weight: 600;
+    width: 100%;
+    padding: 4.5px 10px;
+    background-color: white;
+    border: 1px solid #e7e6e9;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+}
+/*
+    Responsive styles
+*/
+
+@media (max-width: 832px) {
+  .Filter {
+    .End {
+      order: 2;
+    }
+    .Middle {
+      order: 3;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .Filter {
+    .Menu {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.FilterLoader {
+  display: flex;
+  :global {
+    .container {
+      padding: 0;
+    }
+  }
+  .Wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    margin-bottom: 40px;
+  }
+  .LoadingLogo {
+    :global {
+      .ant-skeleton-title {
+        display: none;
+      }
+      .ant-skeleton-paragraph {
+        margin: 0;
+        li {
+          height: 40px;
+          width: 120px !important;
+        }
+      }
+    }
+  }
+  .LoadingSearch {
+    :global {
+      .ant-skeleton-title {
+        display: none;
+      }
+      .ant-skeleton-paragraph {
+        margin: 0;
+        li {
+          height: 40px;
+          width: 398px !important;
+          @media (max-width: 991px) {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+  .LoadingSignup {
+    width: 150px;
+    height: 40px;
+    :global {
+      .ant-skeleton-title {
+        display: none;
+      }
+      .ant-skeleton-paragraph {
+        margin: 0;
+        li {
+          height: 40px;
+          width: 150px !important;
+        }
+      }
+    }
+  }
+  .LoadingProfile {
+    width: 40px;
+    height: 40px;
+  }
+  .LoadingRight {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+}

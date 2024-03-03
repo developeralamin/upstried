@@ -1,0 +1,41 @@
+.TaskOnDetailedTip {
+    display: flex;
+    grid-gap: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background-color: rgb(252, 251, 252);
+    margin-bottom: 10px;
+    padding: 18px;
+    align-items: center;
+    .Left {
+        flex: 1 0 1;
+        display: flex;
+        align-items: center;
+        grid-gap: 20px;
+        img{
+            max-width: 100%;
+        }
+    }
+    .Title{
+        font-size: 15px;
+        font-weight: 500;
+        font-family: var(--theme-f-family-secondary);
+        text-decoration: underline;
+    }
+    figure{
+        width:150px;
+        height:100px;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+    }
+    .Description{
+        font-size: 15px;
+        font-weight: 500;
+        font-family: var(--theme-f-family-secondary);
+    }
+    .Right {
+        flex: auto;
+    }
+ 
+}

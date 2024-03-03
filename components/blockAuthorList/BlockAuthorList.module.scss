@@ -1,0 +1,47 @@
+.BlockAuthorList{
+    width: 100%;
+    .Heading{
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 26px;
+        color: #222222;
+        padding-bottom: 15px;
+    }
+    .divider {
+        margin: 8px 0px 20px;
+      }
+    .BlockedAuthorList{
+        padding: 0;
+        margin:0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .BlockedAuthorItem{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            flex: 1;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+        }
+        .Circle{
+            font-size: 5px;
+            margin-right: 10px;
+        }
+        .Unblock{
+            background: var(--theme-primary-color);
+            border-radius: 3px;
+            span{
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 16px;
+                color: #fff;
+            }
+        }
+    }
+}

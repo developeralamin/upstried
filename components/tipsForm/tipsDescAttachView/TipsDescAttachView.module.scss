@@ -1,0 +1,37 @@
+.TipsDescAttachView {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+    padding-bottom: 30px;
+    .TipsDescAttachView__item {
+        width:362px;
+        height: 34px;
+        background-color: #f6f6f6;
+        border: 2px solid #ededed;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        border-radius: 3px;
+        color: #4a77fd;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .Remove {
+        color: #959595;
+        background: transparent;
+        border: none;
+        padding:0;
+    }
+}
+
+@media (max-width:767px){
+    .TipsDescAttachView{
+        .TipsDescAttachView__item {
+            width:100%;
+            height: auto;
+        }
+    }
+}

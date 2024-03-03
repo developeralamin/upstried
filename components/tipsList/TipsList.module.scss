@@ -1,0 +1,36 @@
+.TipsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    & > div {
+        width: 100%;
+    }
+    :global .TipsListItem {
+        flex: 1 0 30%;
+        max-width: 297px;
+    }
+    .Bottom {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 13px 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .TipsList {
+        :global .TipsListItem {
+            flex: 1 0 100%;
+            min-width: 100%;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+.TipsSearchbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}

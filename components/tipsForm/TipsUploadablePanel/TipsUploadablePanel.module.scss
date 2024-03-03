@@ -1,0 +1,96 @@
+.TipsUploadablePanel {
+    background: #f5f5f5;
+    box-shadow: 0px 0px 103px 51px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    width: 100%;
+    .Nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        background: #fff;
+        align-items: center;
+        border-radius: 23px 23px 0 0;
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 66px;
+            margin: 0;
+            margin-left: 50px;
+            li {
+                padding: 27px 25px;
+                font-family: var(--theme-f-family-primary);
+                font-weight: bold;
+                font-size: 1.1875rem;
+                color: #282a32;
+            }
+        }
+        .Active {
+            border-radius: 1.5px;
+            border-bottom: 3px solid var(--theme-primary-color);
+            padding-bottom: 5px;
+        }
+    }
+    .CloseUploader {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        margin-right: 30px;
+    }
+
+    .Upload {
+        padding: 4.125rem;
+    }
+    .UploaderTitle {
+        font-size: 18px !important;
+        font-weight: 400;
+        font-family: var(--theme-f-family-scondary);
+    }
+    .UploaderRules {
+        font-size: 14px !important;
+        font-weight: 400;
+        font-family: var(--theme-f-family-scondary);
+        color: #a3a4a4;
+    }
+    .UploaderBtn {
+        width: 151px;
+        height: 44px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: 2px solid var(--theme-primary-color);
+        color: var(--theme-primary-color);
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 20px;
+        padding: 0;
+    }
+    :global {
+        .ant-upload.ant-upload-drag {
+            min-height: 271px;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            border: none;
+        }
+    }
+
+    .Library {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        height: 350px;
+        overflow-y: auto;
+        padding-right: 20px;
+        padding-left: 30px;
+        .LibraryItem {
+            flex: 1 0 calc(33% - 30px);
+            cursor: pointer;
+        }
+    }
+    .ImageValidation {
+        color: lighten($color: #a3a4a4, $amount: 10);
+        font-weight: 400;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}

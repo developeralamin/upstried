@@ -1,0 +1,262 @@
+.ProfileBanner {
+    background-color: #222222;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    :global .container{
+        z-index: 1;
+    }
+    .Top {
+        display: flex;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        justify-content: space-between;
+        align-items: flex-end;
+        grid-gap: 30px;
+        flex-wrap: wrap;
+        min-height: 400px;
+        @media (max-width: 991px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    .Varified {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .NonVarifiedWarning {
+        position: relative;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        .NonVarifiedWarningContent {
+            position: absolute;
+            min-width: 295px;
+            background-color: #fff;
+            bottom: 30px;
+            left: 25px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 14px;
+            color: #282a32;
+            padding: 8px 13px;
+            border-radius: 2px;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.7s all ease;
+            @media (max-width:663px){
+                right: 0;
+    left: unset;
+    bottom: unset;
+    top: 100%;
+    z-index: 9999;
+            }
+            a {
+                margin-left: 5px;
+            }
+            .WarningIcon {
+                height: 50px;
+            }
+        }
+    }
+    .ActiveWarning {
+        transition: 0.6s all ease;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    .WarningToggle {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+    .Quote {
+        margin-top: 0px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        max-width: 40%;
+        min-width: 300px;
+        @media (max-width: 550px){
+            max-width: 100%;
+            min-width: 100%;
+        }
+    }
+    .City {
+        font-size: 12px;
+        color: #9c9c9c !important;
+        font-weight: 400;
+    }
+
+    .Avatar {
+        
+        border-radius: 50%;
+        margin-bottom: 18px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border: 1px solid white;
+    }
+
+    .TopLeft {
+        display: flex;
+        grid-gap: 28px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        flex: 1 0 60%;
+    }
+
+    .TopRight {
+        flex: 1 0 30%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .NameWithSuffix {
+        display: flex;
+        align-items: center;
+        grid-gap: 5px;
+        margin-bottom: 5px;
+    }
+    .Actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+
+        .ActionItem {
+            border: none;
+        }
+    }
+    .Toggler {
+        cursor: pointer;
+        background-color: #fff;
+        width: 43px;
+        height: 34px;
+        border-radius: 3px;
+        border: 1px solid #e7e6e9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+            display: flex;
+            width: 5px;
+            height: 5px;
+            background-color: #000;
+            border-radius: 3px;
+            border: 1px solid #e7e6e9;
+        }
+    }
+
+    .Name {
+        font-size: 1.8rem;
+        color: #fff;
+        font-weight: bold;
+        line-height: 1;
+        margin: 0;
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+
+    .Profession {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: var(--theme-f-family-secondary);
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    .EditBtn {
+        width: 121px;
+        height: 34px;
+        border-radius: 3px;
+        background-color: var(--theme-primary-color);
+        border: 1px solid var(--theme-primary-color);
+        font-size: 12px;
+        font-weight: 400;
+        &:hover {
+            background-color: #80a0ff;
+            border: 1px solid #80a0ff;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .Status {
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.102);
+        padding: 23px;
+        text-align: center;
+
+        h4 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        h6 {
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff;
+            font-family: var(--theme-f-family-secondary);
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #a4a4a4;
+            font-style: italic;
+            font-family: var(--theme-f-family-tertiary);
+        }
+    }
+
+    .Bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        flex-wrap: wrap;
+        grid-gap: 30px;
+        margin-top: 50px;
+    }
+    :global {
+        .BtnFollow {
+            background-color: var(--theme-primary-color);
+            span {
+                color: #fff !important;
+            }
+            &:hover {
+                background-color: #fff;
+                border: 1px solid var(--theme-primary-color);
+                span {
+                    color: var(--theme-primary-color) !important;
+                }
+            }
+        }
+    }
+}
+
+.left {
+    min-width: 250px;
+}
+
+.edit-banner {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.Overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,34 @@
+.MobileDetect{
+    background: var(--theme-primary-color);
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    z-index: 9999;
+    h4{
+        font-size: 22px;
+    }
+    .Actions{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .BtnOne{
+        background: transparent;
+        border: 1.5px solid #fff;
+        color: #fff;
+        padding: 10px 20px;
+        height: auto;
+        border-radius: 50px;
+    }
+    .BtnTwo{
+        background: #fff;
+        border: 1.5px solid var(--theme-primary-color);
+        color:var(--theme-primary-color);
+        padding: 10px 20px;
+        height: auto;
+        border-radius: 50px;
+        font-weight: 600;
+    }
+}

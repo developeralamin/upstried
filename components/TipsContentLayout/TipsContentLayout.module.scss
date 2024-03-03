@@ -1,0 +1,138 @@
+.TipsDetails {
+  position: relative;
+
+ /*  .OverlayBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100px;
+    cursor: pointer;
+  } */
+  .TipsDetailsContainer {
+    position: absolute;
+ /*    z-index: 1;
+    top: 0;
+    width: 100%; */
+    // padding-top: 67px;
+    width: 100%;
+    overflow: hidden;
+    @media (max-width: 1100px) {
+      padding-top: 0px;
+    }
+    @media (max-width: 767px) {
+      overflow: hidden;
+    }
+    .TipsContentContainer {
+      border-radius: 30px;
+    }
+    :global .TipsDetailsContent {
+      transition: width 0.6s ease;
+    }
+    &.hasSidebar {
+      :global .TipsDetailsContent {
+        border-radius: 30px 0 0 0 !important;
+        width: calc(100% - 430px);
+        transition: width 0.3s ease;
+        @media (max-width: 500px) {
+          width: 100% !important;
+        }
+      }
+      @media (max-width: 1130px) {
+        :global .CommentCloser {
+          display: block;
+        }
+      }
+      @media (max-width: 1180px) {
+        width: 100%;
+        :global .TipsDetailsContent {
+          border-radius: 0px 0 0 0 !important;
+        }
+      }
+
+      :global {
+        .TipsList {
+          width: 90%;
+          margin: auto;
+          & > div {
+            max-width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .TipsCommentContainer {
+    width: 0px;
+    position: absolute;
+    right: -430px;
+    top: 67px;
+    width: 430px;
+    height: 100%;
+    transition: right 0.3s ease;
+    background-color: #fff;
+    @media (max-width: 1100px) {
+      position: fixed;
+      top: 0;
+      z-index: 99;
+    }
+    &.Active {
+      visibility: visible;
+      opacity: 1;
+      right: 0;
+      transition: right 0.3s ease;
+      background-color: #fff;
+      @media (max-width: 912px) {
+        width: 100%;
+      }
+    }
+  }
+  .pageTitle {
+    margin-top: 40px;
+    font-size: 1.875rem;
+    color: var(--theme-primary-color);
+  }
+  .TipCommentOn {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.07);
+  }
+
+  .goTo {
+    position: absolute;
+    top: 15px;
+    font-size: 18px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    @media (max-width: 1100px) {
+      color: #959595;
+      box-shadow: none;
+    }
+  }
+}
+
+.Toggler {
+  z-index: 9;
+  position: absolute;
+  left: calc(100% - 450px);
+  top: 100px;
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  @media (max-width: 1130px) {
+    display: none;
+  }
+}
+
+.TogglerActive {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}

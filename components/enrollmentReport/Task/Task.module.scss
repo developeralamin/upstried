@@ -1,0 +1,166 @@
+.TaskWrapper {
+    background: #FCFBFC;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+   
+    padding: 14px 24px;
+    align-items: center;
+    margin-top: 10px;
+
+    .TitleProgressWrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+    .ViewLogBtn {
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: var(--theme-primary-color);
+        margin: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover {
+            color:  #7396FF;
+        }
+
+    }
+    .TaskTitle {
+        margin : 0;
+        padding-right: 20px;
+    }
+    .ViewProgressContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap : 9px;
+    }
+    .ProgressWrapper {
+        // width: 70px;
+        // height: 9px;
+        // display: flex;
+        background: #ddd;
+        display: flex;
+        height: 3px;
+        width: 70px;
+        border-radius: 10px;
+        overflow: hidden;
+        // margin-top: 10px;
+    }
+    .p1 {
+        // width: 20%;
+        height: 3px;
+        background: #3161F1;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .p2 {
+        // width: 50%;
+        height: 3px;
+        background-color:#FF174F;
+        // border-radius: 0px 10px 10px 0px;
+    }
+    .p3 {
+        // width: 30%;
+        height: 3px;
+        background: #F1B920;
+    }
+   
+    .p4 {
+        // width: 50%;
+        height: 3px;
+        background-color: #E5E5E5;
+        border-radius: 0px 10px 10px 0px;
+    }
+    
+   
+}
+
+.ColumnTitle {
+    font-size: 15px;
+    line-height: 18px;
+    color: #4282FF;
+    font-weight: 700;
+    margin: 0;
+}
+
+.GridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    min-height: 20vh;
+    grid-row-gap: 1px;
+    background-color: #EBEBEB;
+    .gridItem {
+        background-color: white;
+        padding: 20px;
+        font-size : 14px;
+        font-weight: 400;
+        font-family: Proxima Nova, sans-serif;
+    }
+
+}
+
+.TableHeader {
+    color: #4282FF;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: Proxima Nova, sans-serif;
+    background-color: white;
+
+}
+.Status {
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Fail {
+    border: none;
+    border-radius: 20px;
+    background: none;
+    width: 20px;
+    height: 20px;
+    background: #fc3262;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Skip {
+    border: none;
+    border-radius: 20px;
+    background: none;
+    width: 20px;
+    height: 20px;
+    background: #f1b920;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Done {
+    border: none;
+    background: none;
+    width: 20px;
+    height: 20px;
+    background: #4a77fd;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .NoAction {
+    border: none;
+    background: none;
+    width: 20px;
+    height: 20px;
+    background: #DFDFDF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,0 +1,227 @@
+.TaskRepeater {
+    .TogglerBtn{
+        padding:0;
+        height:auto;
+        opacity: .5;
+        border:none;
+    }
+    .Status{
+        color: var(--theme-primary-color);
+        margin-bottom: 30px;
+    }
+    .DisabledSettings{
+        position: relative;
+        .Overlay{
+            position: absolute;
+            left: 0;
+            top:0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-color: rgba(255,255,255,0.8);
+            z-index: 99;
+        }
+    }
+    .WeekError{
+        color: var(--color-danger);
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 10px;
+    margin-bottom: 10px;
+    }
+    .Box {
+        position: absolute;
+        width: 400px;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        padding: 22px;
+        border-radius: 5px;
+        box-shadow: 0 12px 10px rgba(0, 0, 0, 0.05);
+        z-index: 111;
+        border: 1px solid #e3e2ec;
+        max-height:500px;
+        overflow-y: auto;
+        .Title {
+            font-size: 0.875rem;
+            font-family: var(--theme-f-family-secondary);
+            border-bottom: 2px solid rgba(#000, 0.05);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .IntervalOccurenceWrapper {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .Days {
+            }
+        }
+        .InputWrapper {
+            display: flex;
+            gap: 25px;
+            & > label {
+                color: #65666b;
+                flex: 1 0 15%;
+            }
+        }
+        .DailyOccurence {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .InputBox {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            margin-bottom: 15px;
+            align-items: center;
+            label {
+                color: #65666b;
+            }
+            :global {
+                .ant-input-number{
+                    width: 65px;
+                    min-width: 59px;
+                    border-radius: 5px;
+                }
+            }
+           & > div:first-child {
+                flex: 1 0 20%;
+                input {
+                    height: 34px;
+                    border-radius: 5px;
+                }
+            }
+
+            & > div:last-child {
+                flex: 1 0 70%;
+                display: flex;
+                justify-content: space-between;
+                :global {
+                    .ant-checkbox-wrapper {
+                    }
+                }
+            }
+
+            :global {
+                .ant-select-selector {
+                    background-color: #fff;
+                    border: 1px solid #e6e4e9;
+                    border-radius: 5px;
+                    color: #65676b;
+                }
+            }
+        }
+        .TaskRepeater__type {
+            margin-bottom: 23px;
+            label {
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        .Times {
+            color: #65676b;
+        }
+        .TaskRepeater__input__interval {
+            display: flex;
+            gap: 25px;
+        }
+        .TaskRepeater__input__interval__input {
+            display: flex;
+            gap: 6px;
+        }
+
+        .TaskRepeater__input__occurence {
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
+        }
+        .TaskRepeater__input__occurence__input_container {
+            display: flex;
+            gap: 25px;
+        }
+        .TaskRepeater__input__occurence__input {
+            display: flex;
+            gap: 6px;
+            flex-direction: column;
+        }
+        .TaskRepeater__input__occurence__values {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            :global {
+                .ant-picker {
+                    max-width: 100px;
+                    width: 154px;
+                    min-width: 30%;
+                    flex: 1 0 30%;
+                    border-radius: 5px;
+                    background: #f6f6f6;
+                    border: 1px solid #e6e4e9;
+                }
+            }
+        }
+
+        .TaskRepeater__input__duration {
+            display: flex;
+            gap: 25px;
+        }
+
+        .TaskRepeater__input__duration__input {
+            display: flex;
+            gap: 6px;
+        }
+        .IntervalOccurenceValuesWrapper {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .IntervalOccurenceValues {
+            min-width: 100px;
+            width:100px;
+            max-width:100px;
+            flex: 1 0 22%;
+            background-color: #f1f2f5;
+            :global {
+                .ant-select-selector {
+                    background-color: #f1f2f5;
+                    border: 1px solid #e6e4e9;
+                    border-radius: 5px;
+                    color: #65676b;
+                }
+            }
+        }
+        .TaskRepeater__footer {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            .BtnCancel {
+                border-radius: 5px;
+                background-color: #f1f2f5;
+                border: 1px solid #e6e4e9;
+                padding: 0 30px;
+                height: 34px;
+            }
+            .BtnSet {
+                border-radius: 5px;
+                color: #fff;
+                background-color: #3f7bf4;
+                border: 1px solid #dad8e0;
+                padding: 0 50px;
+                height: 34px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .TaskRepeater {
+        .Box {
+            width:100%;
+        }
+    }
+}

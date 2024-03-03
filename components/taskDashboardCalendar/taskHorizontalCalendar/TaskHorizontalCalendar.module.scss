@@ -1,0 +1,9 @@
+.TaskHorizontalCalendar {
+    .Dates {
+        display: flex;
+        gap: 15px;
+        @media (max-width: 770px){
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.form {
+  :global(input){
+    width: 100%;
+    border-radius: 5px;
+    min-height: 45px;
+    padding: 7px;
+    color: gray;
+
+    &:focus {
+      color: black;
+    }
+  }
+
+  :global(.ant-checkbox-wrapper){
+    color: #949494;
+  }
+
+  :global(.ant-form-item-label) {
+    text-transform: uppercase;
+    
+
+    label {
+      color: #949494;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.button {
+  margin: 5px 0 20px;
+  padding: 1px 0;
+  font-size: 12px;
+  border: unset;
+  color: #3161F1;
+
+  &:hover {
+    color: rgba(63, 106, 236, 0.8);
+  }
+
+
+  :global(span){
+    margin-left: 4px !important;
+  } 
+}

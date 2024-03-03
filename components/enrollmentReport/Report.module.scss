@@ -1,0 +1,172 @@
+.Content {
+    // padding: 30px 300px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    @media(min-width : 900px) {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    @media(min-width : 1200px) {
+        padding-left: 190px;
+        padding-right: 220px;   
+    } 
+   
+
+    .TipsTitle {
+        
+        font-family: var(--theme-f-family-primary);
+        color: var(--body-f-color);
+        font-size: 32px;
+        font-weight: 700;
+
+    }
+    .AuthorName {
+        
+        color: #BBBAC7;
+        font-weight: 400;
+        size: 16px;
+        font-family: var(--theme-f-family-secondary);
+        margin: 0;
+
+    }
+    .EnrolleeName {
+        font-weight: 500;
+        font-size: 15px;
+        color: var(--body-f-color);
+
+    }
+    .Profile {
+        color: var( --theme-primary-color);
+        font-family: var(--theme-f-family-secondary);
+        font-size: 15px;
+
+    }
+    .EnrolleeDetailsWrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    .BtnDetails{
+        height: 36px;
+        padding: 0 21px;
+        font-size: 12px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #D8D8D8;
+        box-sizing: border-box;
+        border-radius: 18px !important;
+        i{
+            font-size: 12px;
+        }
+        span, i{
+            color: #000 !important;
+        }
+        &:hover{
+            color: #3161F1;
+            border: 1px solid #3161F1;
+            span, i{
+                color: #3161F1 !important;
+            }
+        }
+    }
+    .TipsReport {
+        font-family: var(--theme-f-family-secondary);
+        font-weight: 500;
+        font-size: 18px;
+        color: #263238;
+    }
+    .CompletionStatus {
+        font-family: var(--theme-f-family-secondary);
+        font-size: 14.8027px;
+        color: #888888;
+        margin: 0;
+        
+    }
+    .InComplete {
+        span {
+            color : #F17631;
+        }
+    }
+    
+    .Completed {
+        span {
+            color : #a7f1d1;
+            
+        }
+    }
+
+    .InProgress {
+        span {
+            color : blue;
+        }
+    }
+
+    .ListTasks{
+        font-family : var(--theme-f-family-secondary);
+        font-size: 18px;
+        color: #263238;
+        margin-top: 21px;
+    }
+    .HzLine {
+        border: 1px solid #D8D8D8;
+    }
+   
+}
+.CenterDiv {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.ShareReport{
+    display: flex;
+    justify-content: space-between;
+    
+
+    .ReportText {
+        color :  #222222;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+.ShareHintText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+.InputLinkWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    .inputField {
+        flex: 1;
+        border-radius: 5px;
+        background: #656565;
+        color:  #FFFFFF;
+        border: none;
+        padding: 5px 13px;
+
+    }
+    .ShareLinkBtn {
+        background: #4F79FB;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-style: normal;
+        // font-size: 16px;
+        font-weight: 400;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+
+    }
+    .InputDisabledBackground {
+        background-color:  #E7E5E5;;
+    }
+}

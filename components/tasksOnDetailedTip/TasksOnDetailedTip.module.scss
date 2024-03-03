@@ -1,0 +1,34 @@
+.TasksOnDetailedTip{
+    .Title{
+        display: flex;
+        align-items: flex-end;
+        grid-gap: 10px;
+        margin-bottom: 2.625rem;
+        h1{
+            margin-bottom: 0;
+            font-size: 2.25rem;
+            font-weight: 700;
+            line-height: .8;
+        }
+        span{
+            line-height: 1;
+            font-size: 12px;
+            font-weight: 500;
+            font-family: var(--theme-f-family-primary);
+        }
+        div{
+            height: 2px;
+            width:100%;
+            background-color: #dbdbdb;
+            display: block;
+        }
+    }
+    .TasksList{
+
+    }
+    :global{
+        .ant-tree-switcher {
+display: none !important;
+        }
+    }
+}

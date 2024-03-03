@@ -1,0 +1,99 @@
+.MyEnrolledTips {
+  :global {
+    .TipsSearchbar {
+      margin-top: -100px;
+      h3 {
+        visibility: hidden;
+        @media (max-width: 738px) {
+          display: none;
+        }
+      }
+
+      @media (max-width: 738px) {
+        margin-top: -42px;
+        justify-content: flex-start;
+      }
+    }
+    .ant-tabs {
+      overflow: visible;
+    }
+    .ant-tabs-nav {
+      box-shadow: none !important;
+      border: none !important;
+      overflow: visible !important;
+    }
+    .ant-tabs-content-holder {
+      width: 100% !important;
+    }
+    .ant-tabs-nav::before {
+      border: none;
+    }
+    .ant-tabs-tab-btn {
+      border-bottom: none !important;
+    }
+    .ant-tabs-nav-wrap {
+      overflow: visible !important;
+    }
+    .ant-tabs-tab-btn {
+      font-family: var(--theme-f-family-primary);
+      background: #ffffff;
+      box-shadow: 0px 2px 11px -6px rgba(0, 0, 0, 0.3);
+      border-radius: 22px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 20px !important;
+      height: auto;
+      & > span {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #4f79fb;
+      }
+    }
+    .badge {
+      width: 25px;
+      height: 25px;
+      background: #4f79fb;
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 13px;
+      border-radius: 25px;
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ant-tabs-tab-active {
+      .ant-tabs-tab-btn {
+        background: #4f79fb;
+        box-shadow: 0px 2px 11px 3px rgba(49, 97, 243, 0.15);
+        border-radius: 22px;
+        span {
+          font-size: 14px;
+          line-height: 17px;
+          color: #ffffff;
+          .badge {
+            width: 25px;
+            height: 25px;
+
+            background: #ffffff;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 13px;
+            border-radius: 25px;
+            color: #4f79fb;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

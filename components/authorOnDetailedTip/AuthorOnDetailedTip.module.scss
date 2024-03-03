@@ -1,0 +1,100 @@
+.AuthorOnDetailedTip {
+    background-color: #f9f9f9;
+    margin-top: 84px;
+    text-align: center;
+    padding-bottom: 60px;
+    @media (max-width: 700px) {
+        padding: 10px;
+    }
+
+    .Container{
+        width:80%;
+        margin: auto;
+    }
+
+    .Author {
+        margin-top: -56px;
+        display: inline-block;
+        margin-bottom: 45px;
+    }
+
+    .AuthorPhoto {
+        border-radius: 100px;
+        width: 98px;
+        height: 98px;
+        overflow: hidden;
+        margin: 0 auto;
+        border: 10px solid #fff;
+        margin-bottom: 11px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .Name {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: var(--theme-f-family-primary);
+        cursor: pointer;
+        line-height: 1;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .Title {
+        font-size: 13px;
+        font-family: var(--theme-f-family-secondary);
+        font-weight: 400;
+        color: var(--color-gray);
+    }
+    .RelatedTips {
+        display: flex;
+        grid-gap: 40px;
+        flex-wrap: wrap;
+        margin: 0 6.25rem;
+        @media (max-width: 700px) {
+            margin: 0;
+        }
+        & > div {
+            flex: 1 0 30%;
+            @media (max-width: 700px) {
+                flex: auto;
+            }
+        }
+    }
+    :global {
+        @media (max-width: 1450px) {
+            .container {
+                width: 940px;
+            }
+        }
+        .author-tips {
+            display: flex;
+            gap: 30px;
+            overflow: hidden;
+        }
+    }
+    .TipsList{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        & > div{
+            width:100%;
+        }
+        :global .TipsListItem {
+            flex: 1 0 22%;
+            min-width: 300px;
+            width: 300px;
+            max-width: 33%;
+        }
+    }
+
+    :global {
+        div.author-modal-content{
+            bottom: 108% !important;
+            top: unset !important;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.radio {
+  font-size: 18px;
+  color: #000000;
+  gap: 3px;
+  &:global(.ant-radio-wrapper-checked) {
+    color: var(--theme-primary-color);
+  }
+  :global .ant-radio{
+    top: 6px;
+  }
+  :global .ant-radio-inner{
+    width: 26px;
+    height: 26px;
+    border-color: var(--theme-primary-color) !important;
+    &::after {
+      width: 12px;
+      height: 12px;
+      top: 6px;
+      left: 6px;
+      background-color: var(--theme-primary-color);
+    }
+  }
+}
+

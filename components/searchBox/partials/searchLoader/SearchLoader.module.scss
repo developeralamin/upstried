@@ -1,0 +1,38 @@
+.SearchLoader{
+    .Title{
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+margin-bottom: 15px;
+    }
+    .ItemList{
+        list-style: none;
+        padding: 0;
+    }
+    .Item{
+    display: flex;
+    margin-bottom: 8px;
+    gap:23px;
+    :global {
+        .ant-skeleton{
+            display: flex;
+            align-items: center;
+        }
+        .ant-skeleton-paragraph{
+            margin-top:5px;
+        }
+        .ant-skeleton-title{
+            margin:0;
+            height:5px;
+        }
+        .ant-skeleton-paragraph li{
+            height:5px;
+        }
+    }
+    }
+    .Image{
+        width: 37px;
+        height: 37px;
+        border-radius: 50px;
+    }
+}

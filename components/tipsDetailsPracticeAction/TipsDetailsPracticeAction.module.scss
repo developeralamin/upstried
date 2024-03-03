@@ -1,0 +1,82 @@
+.PracticeAgain {
+    border: 1px solid #d8d8d8;
+    border-radius: 54px !important;
+    display: flex;
+    grid-gap: 10px;
+    gap: 10px;
+    align-items: center;
+    padding: 12px 21px !important;
+    height: auto;
+    font-size: 12px;
+    color: #000000;
+    &:hover {
+        span {
+            color: var(--theme-primary-color) !important;
+        }
+    }
+}
+
+
+.ActionIncomplete{
+    display: flex;
+    gap: 17px;
+}
+
+.BtnEnrollAgain{
+    height: 36px;
+    padding: 0 21px;
+    border-radius: 50px !important;
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border:none;
+    i{
+        font-size: 14px;
+    }
+    span{
+        color: #fff !important;
+    }
+    &:hover{
+        background: #7698FF;
+    }
+}
+
+.btnPractice{
+    height: 36px;
+    padding: 0 21px;
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D8D8D8;
+    box-sizing: border-box;
+    border-radius: 18px !important;
+    i{
+        font-size: 14px;
+    }
+    span, i{
+        color: #000 !important;
+    }
+    &:hover{
+        color: #3161F1;
+        border: 1px solid #3161F1;
+        span, i{
+            color: #3161F1 !important;
+        }
+    }
+}
+
+.btnPracticeMode{
+    padding: 0 16px;
+    border-radius: 50px !important;
+    font-size: 12px;
+    height: 36px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}

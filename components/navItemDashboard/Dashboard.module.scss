@@ -1,0 +1,24 @@
+.Dashboard {
+    display: flex;
+    position:  relative;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background-color: #888E9F;
+    }
+    width: 38px;
+    height: 38px;
+    background-color: #BBBAC7;
+    border-radius: 999px;
+}
+.Active {
+    background-color: #3B69F2;
+}
+
+.svg1 {
+    position: absolute;
+}
+
+.svg2 {
+    position: absolute;
+}

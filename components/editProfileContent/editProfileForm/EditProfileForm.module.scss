@@ -1,0 +1,51 @@
+.container {
+  max-width: 650px;
+}
+
+.label{
+  margin-bottom: 0px;
+}
+
+.location {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+.btn-container {
+
+  :global(.ant-form-item-control-input-content){
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  button {
+    padding: 10px 20px;
+    height: auto;
+    border-radius: 5px;
+    color: white !important;
+    border-color: #3161F1 !important;
+    background-color: #3161F1 !important;
+
+    &:hover {
+      background-color: rgba(63, 106, 236, 0.8) !important;
+      border-color: rgba(63, 106, 236, 0.8) !important;
+    }
+  }
+}
+
+.list {
+  padding-top: 10px;
+}
+
+.profile {
+  :global(label){
+    min-height: 100% !important;
+  }
+}
+
+.SurveyLocation{
+  & > div{
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  margin: 20px 0;
+  font-size: 0.98rem;
+}
+
+.head {
+  color: black;
+  min-width: 100px;
+  font-weight: bold;
+  
+}
+
+.body {
+  color: black;
+  flex-grow: 1;
+  font-weight: normal;
+}
+
+.tail {
+  min-width: 80px;
+  text-align: right;
+}

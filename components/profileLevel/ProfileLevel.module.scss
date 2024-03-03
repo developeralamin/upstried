@@ -1,0 +1,28 @@
+.ProfileLevel {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.102);
+    padding: 23px;
+    text-align: center;
+
+    h4 {
+        font-size: 24px;
+        font-weight: 700;
+        // color: #fff;
+    }
+
+    h6 {
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        font-family: var(--theme-f-family-secondary);
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #a4a4a4;
+        font-style: italic;
+        font-family: var(--theme-f-family-tertiary);
+    }
+}

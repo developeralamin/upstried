@@ -1,0 +1,16 @@
+.button {
+  margin: 5px 0 20px;
+  padding: 1px 0;
+  font-size: 12px;
+  border: unset;
+  color: #3161F1;
+
+  &:hover {
+    color: rgba(63, 106, 236, 0.8);
+  }
+
+
+  :global(span){
+    margin-left: 4px !important;
+  } 
+}

@@ -1,0 +1,63 @@
+.title {
+  margin: 5px 0;
+  font-family: var(--theme-f-family-primary);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+
+.subtitle {
+  color: gray;
+  margin: 5px 0 5px;
+}
+
+.button {
+  margin: 20px 0 30px 0;
+  width: 100%;
+  min-height: 49px;
+  font-weight: 700;
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+}
+
+.button[disabled],
+.button[disabled]:hover,
+.button[disabled]:focus,
+.button[disabled]:active {
+  height: 49px;
+  border-radius: 4px;
+}
+
+.content {
+  margin: 50px 0 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tab-header {
+  padding: 20px 30px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #C4C4C4;
+  margin-right: 15px;
+  transition: all 1s ease;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.tab-active-dot {
+  background: #4F4F4F;
+  width: 14px;
+  height: 14px;
+}

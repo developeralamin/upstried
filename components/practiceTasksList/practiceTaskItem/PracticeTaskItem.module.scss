@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  border: 1px solid #ececec;
+  align-items: center;
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: #FCFBFC;
+  padding: 10px 0;
+  min-height: 65px;
+}
+
+.body {
+  flex-grow: 1;
+}
+
+.checkbox {
+  padding: 0px 15px 0px 20px;
+}
+
+.progress {
+  padding: 0px 20px 0px 25px;
+  min-width: 130px;
+  line-height: 1.2;
+  font-size: 0.78rem;
+  padding-top: 7px;
+
+  :global(.ant-progress-bg){
+    height: 4px !important;
+  }
+}
+
+.attachments {
+  margin-top: 7px;
+
+  :global(span) {
+    padding-top: 2px;
+    font-size: 0.9rem !important;
+  }
+
+  :global(img) {
+    width: 12px;
+    height: 12px;
+  }
+  
+}
+
+.cross {
+  color: #aeacbc;
+}
+
+.completed {
+  text-align: right;
+  padding: 0px 25px 0px 15px;
+  font-size: 0.78rem;
+  color: #aeacbc;
+}
+
+.hide {
+  display: none;
+}
+
+.once {
+  text-align: right;
+  padding: 0px 25px 0px 15px;
+  font-size: 0.78rem;
+}
+.CompletedItem{
+  .body{
+    opacity: 1;
+  }
+  .completed{
+    opacity: .5;
+  }
+  :global {
+    .practice-dates{
+      & > div{
+        color: #BBBAC7 !important;
+      }
+    }
+  }
+}

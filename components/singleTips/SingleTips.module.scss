@@ -1,0 +1,356 @@
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.MainSingleTips {
+  margin-top: 129px;
+}
+.BredCamb {
+  // margin-left: 98px;
+}
+.SingleTips {
+  display: flex;
+  justify-content: space-around;
+  gap: 70px;
+  margin-top: 48px;
+}
+.TipsDetails {
+  background-color: #f3f6ff;
+  padding: 87px;
+  border-radius: 18px;
+  width: 50%;
+}
+.RightContent {
+  width: 50%;
+}
+
+.imageWidth {
+  width: 350px;
+  height: 440px;
+  margin: 0 auto;
+  display: block;
+}
+.ShareMarkButton {
+  position: absolute;
+  top: 3%;
+  display: -webkit-flex;
+  display: flex;
+  grid-gap: 27px;
+  grid-gap: 24px;
+  gap: 8px;
+  left: 39%;
+}
+.ShareMarkButton span.Icon1 {
+  background: white;
+  border-radius: 51px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 34px;
+}
+.ShareMarkButton span.Icon2 {
+  background: white;
+  border-radius: 51px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 38px;
+}
+.ShareMarkButton span img {
+  width: 15px;
+}
+.Tittle {
+  font-size: 32px;
+}
+.Des {
+  font-size: 15px;
+  color: #5f5d5d;
+}
+.Button {
+  display: flex;
+  gap: 10px;
+}
+.ReadButton,
+.ListenButton {
+  width: 100%;
+  height: 43px;
+  background-color: #195fff;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  border-radius: 11px;
+  font-size: 17px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  align-items: center;
+}
+.ReadButton img,
+.ListenButton img {
+  width: 21px;
+}
+
+.TakeActionBtn {
+  cursor: pointer;
+  width: 100%;
+  height: 43px;
+  background-color: #015e8c;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  border-radius: 11px;
+  font-size: 17px;
+  margin-top: 11px;
+}
+
+.Time {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  padding-top: 13px;
+  padding-bottom: 9px;
+  border-top: 1px solid #e6e2e2;
+  border-bottom: 1px solid #e6e2e2;
+  margin-top: 34px;
+  margin-bottom: 38px;
+}
+.Time img {
+  width: 28px;
+}
+.Description p {
+  width: 488px;
+  margin-top: 14px;
+  line-height: 23px;
+  color: #4b4d53;
+}
+
+// card section with slider
+.LikeTips {
+  padding-top: 90px;
+  padding-bottom: 150px;
+}
+.LikeTips h2 {
+  height: 48px;
+  position: relative;
+  z-index: 1;
+}
+
+.LikeTips h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 6%;
+  border-bottom: 2.5px solid #a79ba7;
+}
+.LikeTips p {
+  margin-top: 14px;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.CardContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.SingleCard {
+  // width:400px;
+  border: 2px solid #dedede;
+  border-radius: 27px;
+  position: relative;
+  // margin-top: 200px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.ViewButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 53px;
+}
+.ViewButton button {
+  width: 112px;
+  height: 41px;
+  background-color: transparent;
+  outline: none;
+  color: #195fff;
+  border-radius: 16px;
+  font-size: 17px;
+  border: 2px solid;
+}
+
+.BgWhiteColor {
+  width: 90%;
+  height: 300px;
+  background-color: #ebddfe;
+  border-radius: 10px 10px 0 0;
+  margin: 20px auto;
+}
+
+.CardContent {
+  margin: 20px;
+}
+.CardContent button {
+  text-transform: capitalize;
+  background: #d1ddff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 29px;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.CardContent h3 {
+  font-size: 21px;
+  cursor: pointer;
+}
+.CardContent h4 {
+  font-size: 17px;
+  color: #665d5d;
+}
+.CardContent p {
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.CardIamge {
+  width: 200px;
+  // height:440px;
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+.lockIcon {
+  width: 30px;
+  height: 30px;
+  background: #ebddfe;
+  border-radius: 50%;
+  position: absolute;
+  top: -12%;
+  left: 73%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lockIcon span img {
+  width: 19px;
+}
+
+// newsletter
+.MainNewsLetter {
+  text-align: center;
+  margin-top: 90px;
+  padding-bottom: 73px;
+}
+.NewsLetterContent h2 {
+  font-size: 30px;
+}
+.NewsLetterContent p {
+  font-weight: 300;
+  font-size: 17px;
+  margin-bottom: 34px;
+}
+
+.InputField {
+  width: 650px;
+  height: 60px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 650px;
+}
+.InputField input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 7px 15px;
+}
+
+.InputField .SubscribeBtn {
+  width: 160px;
+  height: 35px;
+  background-color: #195fff;
+  color: #ffffff;
+  position: absolute;
+  border: 0;
+  outline: none;
+  right: 16px;
+  top: 13px;
+  border-radius: 15px;
+}
+
+.NewsLetterIcon {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+.SingleNewsIcon {
+  width: 45px;
+  height: 45px;
+  background: #195fff;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  line-height: 45px;
+  font-size: 19px;
+}
+.CopyRightArea {
+  background: #ffffff;
+  padding-top: 27px;
+  padding-bottom: 13px;
+}
+.containerFooter {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.FooterContent p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+//Mobile device css
+
+@media screen and (max-width: 1340px) {
+  .container {
+    width: 93%;
+  }
+  .containerFooter {
+    width: 93%;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .CardContainer {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .SingleTips {
+    flex-direction: column;
+  }
+  .CardContainer {
+    grid-template-columns: 1fr;
+  }
+  .InputField {
+    width: 422px;
+  }
+  .Description p {
+    width: 388px;
+  }
+  .containerFooter {
+    align-items: center;
+    flex-direction: column;
+  }
+}

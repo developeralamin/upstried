@@ -1,0 +1,74 @@
+.TaskDashboardCalendar {
+
+    .Top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        @media (max-width: 618px){
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .Left {
+        }
+        .Right {
+            display: flex;
+            gap: 15px;
+        }
+    }
+    .Bottom{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 121.5%;
+        color: #000000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 1140px){
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .Left{
+            display: flex;
+            flex-direction: column;
+            .Date{
+                color: var(--theme-primary-color);
+            }
+    
+        }        
+    }
+    .Today {
+        width: 70px;
+        height: 29px;
+        background: #ffffff;
+        box-shadow: 0px 0px 6px rgba(49, 97, 241, 0.1);
+        border-radius: 2px;
+        padding: 0;
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        color: #222222;
+    }
+    .NavigationBtn{
+        width: 33px;
+        height: 29px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 6px rgba(49, 97, 241, 0.1);
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Navigation {
+        display: flex;
+        gap: 4px;
+    }
+}

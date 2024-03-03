@@ -1,0 +1,168 @@
+@import "~react-sortable-tree/style.css";
+
+.rst__moveHandle,
+.rst__loadingHandle {
+  background: #b9b6c6;
+  background-size: contain;
+  border: unset;
+  box-shadow: none;
+  height: 0 !important;
+  margin-top: 12px;
+  mask-image: url("/icons/expand-arrows-alt-solid.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 82% 82%;
+  width: 14px;
+  transform: translate(-14px, 3px) !important;
+  &:hover {
+    background: var(--theme-primary-color);
+  }
+}
+
+.rst__tree {
+  transform: translateX(-37px);
+}
+
+.rst__node {
+  align-items: center;
+  display: flex;
+  height: auto !important;
+  justify-content: center;
+  min-height: 30px !important;
+
+  div {
+    height: auto !important;
+    position: relative;
+  }
+
+  .rst__moveHandle,
+  .rst__loadingHandle {
+    height: 14px !important;
+    opacity: 0 !important;
+    width: 14px !important;
+  }
+
+  &:hover .rst__moveHandle,
+  .rst__loadingHandle {
+    opacity: 1 !important;
+  }
+}
+
+.rst__rowWrapper {
+  padding: 0;
+}
+
+.rst__rowContents,
+.rst__lineChildren,
+.rst__lineHalfHorizontalRight::before,
+.rst__lineFullVertical::after,
+.rst__lineHalfVerticalTop::after,
+.rst__lineHalfVerticalBottom::after,
+.rst__lineChildren::after {
+  all: unset;
+}
+
+.rst__nodeContent {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.rst__collapseButton {
+  background: #b9b6c6;
+  background-size: contain;
+  margin-top: 1.5px;
+  mask-image: url("/chevron-down-solid.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-size: 70%;
+}
+
+// .rst__nodeContent{
+//   & > div > div:first-child{
+//     background-color: orange !important;
+//   }
+//   background:rebeccapurple !important;
+// }
+
+.rst__expandButton {
+  background: #b9b6c6;
+  background-size: contain;
+  margin-top: 1px;
+  mask-image: url("/chevron-right-solid.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-size: 50%;
+}
+
+.rst__collapseButton,
+.rst__expandButton {
+  display: none;
+  // border: unset;
+  // border-radius: none;
+  // box-shadow: none;
+  // height: 14px;
+  // position: absolute;
+  // top: 10px;
+  // transform: translateX(33px);
+  // width: 14px;
+  // z-index: 2000;
+
+  // &:hover {
+  //   background: var(--theme-primary-color);
+  //   height: 14px;
+  //   width: 14px;
+  // }
+}
+
+.rst__collapseButton:focus,
+.rst__expandButton:focus {
+  box-shadow: none;
+}
+
+// .rst__collapseButton:hover:not(:active),
+// .rst__expandButton:hover:not(:active) {
+//   background-size: contain;
+//   height: 14px;
+//   width: 14px;
+// }
+
+.rst__placeholder {
+  margin: 0 15px;
+  max-width: none;
+  min-height: 50px;
+}
+
+.rst__placeholder::before {
+  border: unset !important;
+}
+
+.rst__absoluteLineBlock {
+  display: none;
+}
+
+.rst__rowLandingPad::before,
+.rst__rowCancelPad::before {
+  background-color: inherit;
+  border: 1px dashed #e0dfe2;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.rst__placeholderLandingPad::before,
+.rst__placeholderCancelPad::before {
+  background-color: inherit;
+  border: 1px dashed #e0dfe2 !important;
+  border-radius: 5px;
+}
+
+.rst__rowCancelPad::before {
+  border: unset !important;
+}
+
+.rst__placeholderCancelPad::before {
+  border: unset !important;
+}

@@ -1,0 +1,285 @@
+.TipsDetailsWrapper {
+  position: relative;
+  background: #fff;
+  border-radius: 30px 0px 0 0;
+  .TipsDetailsContent {
+    background: #fff;
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+    height: 100%;
+    @media (max-width: 1100px) {
+      border-radius: 0;
+    }
+  }
+  .TakeActionBtn{
+    cursor: pointer;
+    width: 41%;
+    height: 43px;
+    background-color: #015E8C;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 32px;
+    font-size: 17px;
+}
+  .PublishedAt,
+  .CategoryName {
+    font-size: 0.8125rem;
+  }
+  .CategoryName {
+    cursor: pointer;
+    &:hover {
+      color: #222222;
+    }
+  }
+  .MetaDivider {
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-gray-light);
+    display: inline-block;
+    border-radius: 10px;
+    margin: 0 7px;
+  }
+//Audio
+audio {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 34px;
+}
+  .AttachmentToolbarContainer {
+    margin-top: 26px;
+    margin-bottom: 40px;
+  }
+  :global .container {
+    @media (max-width: 1420px) {
+      width: 100%;
+    }
+  }
+  :global {
+    .author-modal-content {
+      bottom: unset !important;
+      top: 100% !important;
+    }
+    .action-sm {
+      display: none !important;
+      align-items: center;
+      .CommentCount {
+        display: none;
+      }
+      .btn-relation {
+        padding: 0px 21px;
+        height: 38px !important;
+      }
+      button {
+        span:last-child {
+          display: none;
+        }
+      }
+    }
+    @media (max-width: 1130px) {
+      .TipsDetailsActions {
+        width: auto;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        & > button {
+          width: 49px;
+          height: 49px;
+          border-radius: 40px;
+          margin-bottom: 8px;
+          svg {
+            margin: 0;
+          }
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+    @media (max-width: 800px) {
+      .TipsDetailsActions {
+        width: auto;
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    .tooltip-content {
+      bottom: unset;
+    }
+    .Author-info {
+      & > span {
+        font-size: 0.9375rem;
+        font-weight: 400;
+        color: var(--color-gray);
+        margin-bottom: 2.375rem;
+        font-family: var(--theme-f-family-secondary);
+      }
+    }
+    .TitleWrapperWithColor {
+      height: 205px;
+    }
+  }
+
+  .TipsDetails {
+    width: 698px;
+    margin: auto;
+    padding-top: 44px;
+    @media (max-width: 736px) {
+      padding: 20px 20px;
+    }
+    @media (max-width: 700px) {
+      width: 100%;
+    }
+  }
+
+  .Title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    word-break: break-word;
+  }
+
+  .Meta {
+    margin-bottom: 2.375rem;
+  }
+
+  .TitleWrapper {
+  }
+
+  .TitleWrapperWithColor {
+    height: 205px;
+    margin-bottom: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ImageWrapper {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.07);
+    border-radius: 0.3125rem;
+    padding: 0.9375rem;
+    position: relative;
+  }
+
+  .Description {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 3.125rem;
+    word-break: break-word;
+    @media (max-width: 800px) {
+      margin-top: 6.4rem;
+    }
+  }
+
+  :global {
+    .MediaWrapper {
+      height: auto;
+    }
+  }
+
+  .Tags {
+    display: flex;
+    grid-gap: 4px;
+    gap: 10px;
+    margin-top: 1.875rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    span {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #000;
+    }
+
+    :global .ant-btn {
+      cursor: pointer;
+      border: 1px solid var(--border-color);
+      padding: 5px 15px !important;
+      font-size: 12px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      color: #000;
+      border-radius: 30px;
+      height: auto !important;
+      span {
+        margin: 0;
+      }
+    }
+  }
+
+  :global {
+    .image-container {
+      & > div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.TipsActionSmaller {
+  position: relative;
+  @media (min-width: 800px) {
+    display: none;
+  }
+}
+
+.TipsActionLarger {
+  // position: relative;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.tips-header {
+  position: relative;
+}
+
+.meta-container {
+    display: flex;
+}
+.MetaItem {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    :global .author {
+        min-height: unset;
+    }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-btn {
+  :global(.ant-btn) {
+    border-radius: 5px;
+
+    :global(span) {
+      color: black;
+    }
+
+    &:hover :global(span) {
+      color: #40a9ff;
+    }
+  }
+}
+
+.PracticeAgain {
+  border: 1px solid #d8d8d8;
+  border-radius: 54px !important;
+  display: flex;
+  grid-gap: 10px;
+  gap: 10px;
+  align-items: center;
+  padding: 12px 21px !important;
+  height: auto;
+  font-size: 12px;
+  color: #000000;
+  &:hover {
+    span {
+      color: var(--theme-primary-color) !important;
+    }
+  }
+}

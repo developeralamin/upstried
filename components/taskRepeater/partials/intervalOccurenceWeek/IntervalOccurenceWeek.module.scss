@@ -1,0 +1,39 @@
+.IntervalOccurrenceWeek{
+    display: flex;
+    gap:5px;
+    margin-bottom: 10px;
+    .Item{
+        flex: 1;
+        background: #f1f2f5;
+        border:1px solid #e6e4e9;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 1;
+        font-family: var(--theme-f-family-primary);
+        font-weight: 500;
+        cursor: pointer;
+        text-align: center;
+        width:34px;
+        padding: 5px 0;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Active{
+        background: var(--theme-primary-color);
+        color: #fff;
+        flex: 1;
+        text-transform: uppercase;
+        font-size: 14px;
+        border:1px solid var(--theme-primary-color);
+        font-family: var(--theme-f-family-primary);
+        font-weight: 500;
+        cursor: pointer;
+        padding: 5px 0;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

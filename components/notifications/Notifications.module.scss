@@ -1,0 +1,56 @@
+.icon {
+  margin-right: 15px;
+  color: #2A2E36;
+  font-size: 25px;
+  cursor: pointer;
+
+  &:hover {
+    color: #3161F1;
+  }
+}
+
+.icon--active {
+  color: #3161F1 !important;
+}
+
+.BellIcon {
+  font-size: 21px;
+  color: #BBBAC7;
+
+  &:hover {
+    color: #222222;
+  }
+
+  &:focus {
+    color: var(--theme-primary-color);
+  }
+
+  &:active {
+    color: var(--theme-primary-color);
+  }
+}
+
+.BellIcon_Active {
+  color: var(--theme-primary-color);
+  &:hover {
+    color: #7496FF;
+  }
+}
+
+.Notification {
+  position: relative;
+  cursor: pointer;
+
+  img {
+    position: absolute;
+    right: -3px;
+    top: -2px;
+
+    @media(max-width: 991px) {
+      right: 12px;
+      top: -3px;
+    }
+  }
+
+
+}

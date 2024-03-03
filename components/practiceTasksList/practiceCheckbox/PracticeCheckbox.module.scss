@@ -1,0 +1,49 @@
+.PracticeCheckboxPanel{
+    width: 279px;
+    border: none;
+    padding: 28px 24px;
+    background: #FFFFFF;
+box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+
+.PracticeCheckboxPanelWrapaer{
+    position: relative;
+}
+
+.PracticeCheckboxPanel{
+    position: absolute;
+    top: -4px;
+    z-index: 1;
+    left: 30px;
+}
+
+.SingleTimelineOptionParent{
+    padding: 0;
+}
+
+
+.SingleTimelineOption {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 60px;
+
+}
+
+.SingleTimelineOptionPadding {
+    padding: 0px 3px;
+}
+
+.CheckboxSinglePopover{
+    :global {
+        .ant-popover-inner-content{
+            padding: 4px 6px;
+            width: 81px;
+            height: 28px;
+            & > div > div{
+                padding-left: 5px;
+            }
+        }
+    }
+}

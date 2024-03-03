@@ -1,0 +1,68 @@
+.SocialShare {
+    position: relative;
+    .Toggler {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: #151617;
+        font-size: 0.8125rem;
+        font-family: var(--theme-f-family-primary);
+        font-weight: 600;
+        margin-right: 1.25rem;
+        cursor: pointer;
+        align-items: center;
+        display: flex;
+        span {
+            width: 10px;
+            margin-right: 0.3125rem;
+            cursor: pointer;
+        }
+    }
+    :global .label{
+        font-weight: 500;
+    }
+    :global .share-items {
+        position: absolute;
+        bottom: 1.875rem;
+        left: -40%;
+        background-color: #fff;
+        width: 13.125rem;
+        border-radius: 0.3125rem;
+        box-shadow: 0rem 0.3125rem 2.5rem 0rem rgba(0, 0, 0, 0.1);
+        padding: 1.1875rem;
+        padding-top: 1.3125rem;
+        z-index: 1;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                border-bottom: 1px solid var(--border-color);
+                padding: 10px 0;
+                font-size: 0.875rem;
+                font-family: var(--theme-f-family-primary);
+                font-weight: 600;
+                &:last-child {
+                    border-bottom: none;
+                    padding-bottom: 0;
+                }
+
+                button {
+                    cursor: pointer;
+                    text-align: left;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    color: #000;
+                    font-size: 0.875rem;
+                    font-family: var(--theme-f-family-primary);
+                    font-weight: 600;
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

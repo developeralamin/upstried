@@ -1,0 +1,45 @@
+.TipsPreview {
+    .MediaWrapper {
+        margin-bottom: 20px;
+        height: 194px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            min-height: 100%;
+            max-height: auto;
+            max-width: 100%;
+        }
+        :global {
+            .image-container {
+                & > div {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .VideoContent {
+        height: 201px;
+        background: var(--color-gray-dark);
+        display: flex;
+        align-items: center;
+        border: 9px solid var(--color-gray-dark);
+    }
+}
+
+.MediaWrapper{
+    .Image{
+        width: 100%;
+        height: 100%;
+    }
+}
+.ThumbnailWrapper{
+    height: 338px;
+    overflow: hidden;
+    width: 100%;
+    @media (max-width: 513px){
+        height: auto;
+    }
+    img{
+        width: 100%;
+    }
+}

@@ -1,0 +1,43 @@
+.TaskAdvCalendar {
+    position: relative;
+    :global {
+        .ant-picker {
+            align-items: center;
+            padding-left: 20px;
+            background: #ffffff;
+            box-shadow: 0px 2px 9px rgba(49, 97, 241, 0.1);
+            border-radius: 4px;
+            width: 180px;
+            height: 37px;
+            display: flex;
+            gap: 10px;
+            font-family: Montserrat, sans-serif;
+            font-weight: normal;
+            font-size: 13px;
+            color: #323232;
+            align-items: center;
+            justify-content: center;
+        }
+        .ant-picker-input {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 12px;
+        }
+    }
+}
+.Calendar {
+    :global .ant-picker-input > input {
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        color: #323232;
+    }
+}
+.CalendarDropdown {
+    :global {
+        .ant-picker-footer {
+            display: none;
+        }
+    }
+}

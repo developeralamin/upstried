@@ -1,0 +1,38 @@
+{
+    "enroll": {
+        "message": {
+            "success": "Tips enrolled successfully!"
+        }
+    },
+    "update": {
+        "message": {
+            "success": "Books updated sucessfully",
+            "failed": "Sorry, books updated failed"
+        }
+    },
+    "create": {
+        "message": {
+            "success": "Books created successfully!",
+            "failed": "Sorry, books is not created"
+        }
+    },
+    "validation": {
+        "message": {
+            "tags": {
+                "length": "You can only add max 10 tags"
+            },
+            "description": {
+                "length": "You can type max 1000 characters"
+            }
+        }
+    },
+    "attachment": {
+        "link": {
+            "message": {
+                "required": "Please enter link",
+                "invalid": "Please enter valid link",
+                "max": "You can add maximum 10 links"
+            }
+        }
+    }
+}

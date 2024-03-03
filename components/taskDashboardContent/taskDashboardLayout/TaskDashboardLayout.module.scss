@@ -1,0 +1,82 @@
+.ContentContainer {
+  top: 85px;
+  position: relative;
+
+  
+
+    .Today {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        width: 100%;
+        position: relative;
+        font-size: 18px;
+        font-family: var(--theme-f-family-primary);
+        font-weight: bold;
+        font-style: normal;
+    }
+   
+
+     .Title {
+      //  display: flex;
+       align-items: center;
+       justify-content: center;
+       margin: 60px 5px 36px 5px;
+      //  gap: 16px;
+       position: relative;
+       
+       .TitleText {
+         font-family: var(--theme-f-family-primary);
+         font-style: normal;
+         font-weight: bold;
+         font-size: 22px;
+         line-height: 27px
+       }
+
+     }
+
+     
+     
+}
+.TaskDashboard{
+  position: relative;
+}
+
+.Sidebar{
+  position: fixed;
+  border-right:1px solid rgba(#000, .1);
+  width: 270px;
+  height: 100vh;
+  padding-top: 142px;
+  overflow-y: auto;
+  @media(max-width: 1199px) {
+      width: 210px;
+  }
+}
+.Content{
+  padding-top: 141px;
+  padding-left: 345px;
+  min-height: 120vh;
+
+  @media(min-width: 1200px) {
+    padding-right: 105px;
+  }
+
+  @media(max-width: 1199px) {
+    padding-left: 265px;
+  }
+}
+
+.MenuItemsWrapper{
+  // padding-left: 30px;
+  margin-top: 34px;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    // padding-left: 9px;
+    li {
+      margin-top: 10px;
+    }
+    
+  }
+}

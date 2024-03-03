@@ -1,0 +1,13 @@
+.ReportTips {
+    .OpenModal {
+        background-color: transparent;
+        color: #000;
+
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .OpenModal:hover {
+        color: var(--theme-primary-color)
+    }
+}

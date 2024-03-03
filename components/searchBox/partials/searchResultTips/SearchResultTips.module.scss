@@ -1,0 +1,47 @@
+.SearchResultTips {
+margin-top: 20px;
+margin-bottom: 20px;
+    .Title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px;
+        color: #282a32;
+        margin-bottom: 23px;
+    }
+    .ItemList {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin: 0;
+    }
+    .Item {
+        cursor: pointer;
+        display: flex;
+        gap: 23px;
+        align-items: center;
+        div{
+            display: flex;
+            gap: 23px;
+            align-items: center;
+        }
+        img {
+            width: 47px;
+            height: 30px;
+        }
+        .Name {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+    .All {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
+        color: var(--theme-primary-color);      
+        margin-top: 20px;  
+        cursor: pointer;
+    }
+}

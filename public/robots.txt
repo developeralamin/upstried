@@ -1,0 +1,4 @@
+# Allow all user agents.
+User-agent: *
+Disallow: /
+Sitemap: https://tips.virtunus.com/sitemap.xml

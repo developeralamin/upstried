@@ -1,0 +1,58 @@
+.AuthorFollowActions {
+    .BtnFollow {
+        border-style: solid;
+        border: 1px solid var(--theme-primary-color);
+        border-radius: 4px;
+        width: 100px;
+        height: 34px;
+        font-family: var(--theme-f-family-primary);
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 12px;
+        justify-content: center;
+        span {
+            font-size: 12px;
+            color: var(--theme-primary-color);
+        }
+        &:hover {
+            background-color: var(--theme-primary-color);
+            span {
+                color: #fff;
+            }
+        }
+    }
+    :global {
+        .BtnFollowing {
+            background-color: #62b6fe;
+            border: 1px solid #62b6fe;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            span {
+                font-size: 12px;
+                color: #fff !important;
+            }
+        }
+
+        .BtnUnfollow {
+            background-color: #ff3a6d !important;
+            border: 1px solid #ff3a6d !important;
+            color: #fff;
+            display: flex;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            svg{
+                display:none;
+            }
+            span {
+                color: #fff !important;
+            }
+        }
+    }
+}

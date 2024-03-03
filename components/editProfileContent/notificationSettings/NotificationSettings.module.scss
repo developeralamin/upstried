@@ -1,0 +1,24 @@
+.divider {
+  margin: 5px 0 20px
+}
+
+.title {
+  color : black;
+  font-size: 1.4rem;
+  font-weight: normal;
+
+  span {
+    font-size: 0.95rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 15px;
+  }
+}
+
+.body {
+  margin: 40px 0 70px;
+}
+
+.disable {
+  opacity: 0.4;
+  pointer-events: none;
+}
